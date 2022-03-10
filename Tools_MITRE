@@ -1,20 +1,18 @@
 Reconnaissance
 https://github.com/HunnicCyber/SharpSniper
 
-
 Resource Development
 https://github.com/vivami/SauronEye
 https://www.acunetix.com/
-
 
 Initial Access
 https://github.com/djhohnstein/SharpWeb
 https://github.com/Yt1g3r/CVE-2020-0688_EXP
 https://github.com/wheelerlaw/docker-redsocks
 https://github.com/Nyr/openvpn-install
+https://github.com/Ridter/cve-2020-0688
 RDCMan
 TPSH
-
 
 Execution
 https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerPick
@@ -30,12 +28,13 @@ https://github.com/icebearfriend/Quickrundown
 https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/ms17_010_eternalblue.rb
 https://github.com/kn81/csv-injection-payloads-master
 https://github.com/uknowsec/SharpSQLTools
-
+https://github.com/ferreirasc/scripts/blob/27bb7f423efa6e9820ff4a9e2624b719978acbc2/SharpPrintNightmare.exe
+https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 Persistence
 https://github.com/0xthirteen/StayKit 
 https://github.com/grCod/poly
-
+https://github.com/ferreirasc/scripts/blob/27bb7f423efa6e9820ff4a9e2624b719978acbc2/SharpPrintNightmare.exe
 
 Privilege Escalation
 https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
@@ -50,7 +49,7 @@ https://github.com/cube0x0/CVE-2021-1675
 https://github.com/KaLendsi/CVE-2021-1732-Exploit
 https://github.com/GossiTheDog/HiveNightmare
 https://github.com/FatRodzianko/SharpFodhelperBypass
-
+https://github.com/ferreirasc/scripts/blob/27bb7f423efa6e9820ff4a9e2624b719978acbc2/SharpPrintNightmare.exe
 
 Defense Evasion
 https://github.com/hfiref0x/UACME
@@ -62,7 +61,10 @@ https://github.com/Nyr/openvpn-install
 https://github.com/S3cur3Th1sSh1t/WinPwn
 https://www.obdev.at/products/littlesnitch/index.html
 https://github.com/FatRodzianko/SharpFodhelperBypass
-
+https://github.com/ferreirasc/scripts/blob/27bb7f423efa6e9820ff4a9e2624b719978acbc2/SharpPrintNightmare.exe
+https://github.com/RythmStick/AMSITrigger
+https://github.com/topotam/PetitPotam
+https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Campaigns/Bazacall
 
 Credential Access
 https://github.com/outflanknl/Net-GPPPassword
@@ -83,7 +85,10 @@ https://github.com/S3cur3Th1sSh1t/WinPwn
 https://github.com/GhostPack/SharpDPAPI
 https://github.com/dafthack/MailSniper
 https://github.com/uknowsec/SharpSQLTools
-
+https://github.com/JoelGMSec/Cloudtopolis
+https://gist.github.com/HarmJ0y/dc379107cfb4aa7ef5c3ecbac0133a02
+https://github.com/Dionach/NtdsAudit
+https://github.com/clymb3r/PowerShell/tree/master/Invoke-Mimikatz
 
 Discovery
 https://github.com/HunnicCyber/SharpSniper
@@ -103,14 +108,16 @@ https://www.obdev.at/products/littlesnitch/index.html
 https://diskanalyzer.com/ - WizTree
 https://github.com/BloodHoundAD/BloodHound
 https://www.cisecurity.org/insights/white-papers/security-primer-icedid
-
+https://github.com/tevora-threat/PowerView3-Aggressor
+https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 Lateral Movement
 https://github.com/nccgroup/nccfsas/tree/main/Tools/SharpZeroLogon
 https://github.com/rapid7/ruby_smb
 https://ngrok.com/
 https://github.com/cube0x0/CVE-2021-1675
-
+https://github.com/topotam/PetitPotam
+https://github.com/Cobalt-Strike/ZeroLogon-BOF
 
 Collection
 https://github.com/NetSPI/PowerUpSQL
@@ -121,7 +128,6 @@ https://www.ostpstviewer.com/
 https://github.com/hlldz/dazzleUP
 https://github.com/dafthack/MailSniper
 https://github.com/FortyNorthSecurity/SqlClient
-
 
 Command and Control
 https://github.com/EmpireProject/Empire
@@ -135,15 +141,17 @@ https://gist.github.com/moshekaplan/425c2a263c3e8a0b080d
 https://github.com/jpillora/chisel/releases
 https://github.com/rofl0r/proxychains-ng
 https://github.com/fatedier/frp
-
+https://github.com/tnpitsecurity/ligolo-ng
+https://github.com/gloxec/CrossC2
+https://github.com/Und3rf10w/external_c2_framework
 
 Exfiltration
 https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-TokenManipulation.ps1
 https://github.com/rapid7/ruby_smb
 https://ngrok.com/
 https://github.com/JoelGMSec/Invoke-DNSteal
+https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration
 MEGAclient.exe
-
 
 Impact
 https://www.gpg4win.org/
