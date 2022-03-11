@@ -5,7 +5,7 @@ Resource Development
 https://www.offensive-security.com/metasploit-unleashed/armitage/
 https://docs.rapid7.com/metasploit/installing-the-metasploit-framework/
 http://www.fastandeasyhacking.com/manual
-https://forum.exploit.in/login/
+https://forum.exploit[.]in/login/
 https://www.linuxuprising.com/2020/09/how-to-install-oracle-java-15-on-ubuntu.html
 https://www.xmind.net/download/
 https://my.vps2day.com/
@@ -15,6 +15,8 @@ https://www.processchecker.com/developers_info/25/IBM%20Corp
 https://golangcode.com/serve-static-assets-using-the-mux-router/
 https://github.com/sstephenson
 https://github.com/rbenv/rbenv
+http://waydro.id/#about
+https://xakep[.]ru/2020/10/05/raccine/ - article about a tool made by Florian Roth to prevent deletion of shadow copies
 
 Initial Access
 https://www.ired.team/offensive-security/initial-access/netntlmv2-hash-stealing-using-outlook
@@ -26,7 +28,7 @@ https://www.youtube.com/watch?v=lT1dhfRKPwo - Double VPN
 doublevpn.com
 
 Execution
-https://book.hacktricks.xyz/pentesting/pentesting-smb#list-shared-folders
+https://book.hacktricks[.]xyz/pentesting/pentesting-smb#list-shared-folders
 https://www.offensive-security.com/metasploit-unleashed/smb-login-check/
 https://www.exploit-db.com/exploits/48537
 https://security-tracker.debian.org/tracker/CVE-2021-44847
@@ -35,6 +37,8 @@ https://reconshell.com/cve-2021-21972-vcenter-rce-vulnerability-analysis/
 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0767
 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0796
 https://www.infosecmatter.com/metasploit-module-library/?mm=exploit/windows/http/exchange_proxylogon_rce
+https://0xdf.gitlab.io/2021/07/08/playing-with-printnightmare.html - articles with details about CVE-2021-34527 and methods to exploit it
+https://xakep[.]ru/2020/09/08/windows-pivoting/ - article for different techniques of getting files onto hosts (ftp, smb, tftp, http, etc.)
 
 Persistence
 
@@ -44,8 +48,9 @@ https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation
 https://nvd.nist.gov/vuln/detail/CVE-2019-0543
 https://vk.com/@thntofff-ataki-na-active-directory-razbiraem-aktualnye-metody-povyshe
 https://decoder.cloud/2020/10/24/when-ntuser-pol-leads-you-to-system/
-https://habr.com/ru/company/pt/blog/423903/
+https://habr[.]com/ru/company/pt/blog/423903/
 https://www.sordum.org/9416/powerrun-v1-4-run-with-highest-privileges
+https://www.exploit-db.com/exploits/3220 - exploit for CVE-2006-5854, local priv esc on Windows
 
 Defense Evasion
 https://www.kitploit.com/2021/07/backstab-tool-to-kill-antimalware.html?m=1
@@ -58,6 +63,7 @@ https://www.youtube.com/watch?v=lT1dhfRKPwo - Double VPN
 https://www.pentestpartners.com/security-blog/breaking-out-of-citrix-and-other-restricted-desktop-environments/
 https://avcheck.net/id/7ewr1QtYiCmN
 https://intoli.com/blog/not-possible-to-block-chrome-headless/
+http://pyatilistnik.org/kak-udalit-dannyie-o-usb-fleshkah-v-reestre-windows/ - how to delete data about flash drives in Windows Registry
 
 Credential Access
 https://www.optiv.com/explore-optiv-insights/blog/digging-your-talons-new-take-password-guessing
@@ -80,10 +86,15 @@ https://crackstation.net/
 https://md5decrypt.net/en/Ntlm/
 https://md5decrypt.net/en/
 https://www.passcape.com/password_recovery_mask
+https://hackware[.]ru/?p=11287
+https://habr[.]com/ru/post/434514/
+https://habr[.]com/en/post/441166/
+https://www.securitylab.ru/analytics/496049.php - walkthrough for kerberoasting
+https://habr[.]com/en/company/pentestit/blog/337390/ - article about capturing hashes with a rogue SMB server and .lnk files
 
 Discovery
 https://academy.hackthebox.eu/course/preview/active-directory-powerview/powerviewsharpview-overview--usage
-https://fixmypc.ru/post/kak-naiti-zaloginenykh-polzovatelei-i-aktivnye-sessii-s-powershell/
+https://fixmypc[.]ru/post/kak-naiti-zaloginenykh-polzovatelei-i-aktivnye-sessii-s-powershell/
 https://avcheck.net/id/7ewr1QtYiCmN
 
 Lateral Movement
@@ -104,7 +115,7 @@ https://www.ostpstviewer.com/
 
 Command and Control
 https://www.cobaltstrike.com/help-externalc2
-https://mega.nz/#!nBhlxLaT!3O9jgeDo5u0oCAxWDfEZsywpXKBpe6IS0CRvAC_7Ils Kobe manual (ru)
+https://mega[.]nz/#!nBhlxLaT!3O9jgeDo5u0oCAxWDfEZsywpXKBpe6IS0CRvAC_7Ils Kobe manual (ru)
 http://proxychains.sf.net
 http://helpdocpt.club/threads/some-cool-stuff-%D0%A1-pws-cna.38/
 https://ftuapps.dev/proxifier-standard-edition-3-42-x64-x86-keygen-portable/
@@ -112,19 +123,20 @@ https://github.com/Cobalt-Strike/cortana-scripts
 https://github.com/pandasec888/taowu-cobalt-strike
 https://sshuttle.readthedocs.io
 https://vulners.com/metasploit/MSF:PAYLOAD/WINDOWS/METERPRETER/REVERSE_TCP_RC4
+https://defcon[.]ru/network-security/3789/
 
 Exfiltration
 https://darkbyte.net/exfiltrando-informacion-por-dns-con-invoke-dnsteal/
 https://www.vishalon.net/blog/commands-for-using-standalone-7-zip-to-split-and-combine-zip-file
-https://rclone.org/mega/
-http://rus-linux.net/MyLDP/consol/7z-command-switches.html
-https://blog.sitedd.ru/archives/53
+https://rclone[.]org/mega/
+http://rus-linux[.]net/MyLDP/consol/7z-command-switches.html
+https://blog.sitedd[.]ru/archives/53
 
 Impact
 
 
 Misc
-https://continews.icu/
+https://continews[.]icu/
 https://threatpost.com/revil-affiliates-leadership-cheated-ransom-payments/174972/
 https://threatpost.com/how-revil-may-have-ripped-off-its-own-affiliates/174887/
 https://github.com/Alex19-91/test_task
@@ -137,15 +149,20 @@ https://www.cmd5.org/
 https://morph3sec.com/Cheat-Sheets/Windows-Red-Team-Cheat-Sheet/
 https://en.wikipedia.org/wiki/Salt_(cryptography)
 https://www.vmware.com/support/pubs/beta/viperltoolkit/doc/utilityappsdoc/vmcontrol.html
-https://vmblog.ru/sbros-paroyal-root-v-vmware-esxi/
+https://vmblog[.]ru/sbros-paroyal-root-v-vmware-esxi/
 https://www.veeam.com/exagrid-storage-solutions.html
 https://www.pvsm.ru/images/Windows-Azure-Recovery-Services-chast-3-rabota-s-Backup-Agent-17.png
 https://www.cobaltstrike.com/blog/cobalt-strike-3-3-now-with-less-powershell-exe/
 https://md5hashing.net/hash
-https://forum.exploit.in/profile/85027-amiga/
-https://forum.exploit.in/profile/46932-sc0rpi0/
+https://forum.exploit[.]in/profile/85027-amiga/
+https://forum.exploit[.]in/profile/46932-sc0rpi0/
 https://stackoverflow.com/questions/39453027/how-to-disable-http2-in-nginx
 https://toktok.ltd/spec.html - chat app using Tor
+https://hhcdn.ru/file/16899324.pdf - pricing for a head hunter service? lol
+https://codeby.net/ - appears to be a legitimate forum for programmers in Russia
+https://xakep.ru/2021/06/25/windows-ad-book/ - an article about a book about hacking AD lol
+https://vc.ru/newtechaudit/108392-kak-posmotret-istoriyu-usb-podklyucheniy-k-stacionarnomu-kompyuteru-noutbuku - how to see the history of USB devices connected to a computer
+
 
 
 TELEGRAM
@@ -165,35 +182,3 @@ https://t.me/cveNotify
 https://t.me/MalwareResearch
 https://t.me/BugCrowd
 https://t.me/itsecalert
-
-
-TBD
-https://hackware.ru/?p=11287
-http://arhangel.ru/fortune/online/taro/
-https://habr.com/ru/post/434514/
-https://helpdocpt.club/threads/%D0%9E%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5
-https://helpdocpt.club/threads/windows-%D0%A4%D0%BE%D1%80%D1%81-%D1%83%D0%B4%D0%B0%D0%BB%D1%91%
-https://habr.com/en/post/441166/
-http://seo-ng.net/seo-statiy/more/poisk-v-total-commander.html
-https://nokuje.com
-https://xakep.ru/2021/04/08/dtrump4ever/
-https://defcon.ru/network-security/3789/
-https://0xdf.gitlab.io/2021/07/08/playing-with-printnightmare.html
-https://habr.com/en/company/pentestit/blog/337390/
-https://xakep.ru/2020/09/08/windows-pivoting/
-https://xakep.ru/2020/10/05/raccine/
-https://vc.ru/newtechaudit/108392-kak-posmotret-istoriyu-usb-podklyucheniy-k-stacionarnomu-kompyuteru-noutbuku
-http://pyatilistnik.org/kak-udalit-dannyie-o-usb-fleshkah-v-reestre-windows/
-https://www.securitylab.ru/analytics/496049.php
-https://xakep.ru/2021/06/25/windows-ad-book/
-https://lenta.ru/news/2021/07/08/scotchwhisky/
-http://waydro.id/#about
-https://www.securitylab.ru/news/524997.php
-https://alphazine.ru/showthread.php?t=2789
-https://siasky.net/AABU9_47P83azwu2N8spRA8w7r1vKwVMrdZnfjZM5qHiog
-https://siasky.net/LAAtPqyAbVU0FKTHc14xH1XNqDwNsvDwHKPPyhdqDc8Onw
-https://anonfiles.com/vbX2e5Wew9/gosuslugi.pnzreg.ru_rar
-https://www.exploit-db.com/exploits/3220
-https://hhcdn.ru/file/ 16899324.pdf
-https://disk.yandex.ru/d/zIsWj8NjR53tGg
-https://codeby.net/
