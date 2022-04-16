@@ -1,5 +1,6 @@
 Reconnaissance
 https://github.com/HunnicCyber/SharpSniper
+https://github.com/RUB-NDS/PRET
 
 Resource Development
 https://github.com/vivami/SauronEye
@@ -14,8 +15,7 @@ https://github.com/wheelerlaw/docker-redsocks
 https://github.com/Nyr/openvpn-install
 https://github.com/Ridter/cve-2020-0688
 https://github.com/cbeuw/Cloak/releases
-RDCMan
-TPSH
+https://wkhtmltopdf.org/
 
 Execution
 https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerPick
@@ -34,6 +34,7 @@ https://github.com/uknowsec/SharpSQLTools
 https://github.com/ferreirasc/scripts/blob/27bb7f423efa6e9820ff4a9e2624b719978acbc2/SharpPrintNightmare.exe
 https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 https://github.com/maaaaz/impacket-examples-windows
+https://github.com/danigargu/CVE-2020-0796
 
 Persistence
 https://github.com/0xthirteen/StayKit 
@@ -47,7 +48,6 @@ https://github.com/hfiref0x/UACME
 https://github.com/L3cr0f/DccwBypassUAC
 https://github.com/EmpireProject/Empire
 https://github.com/nccgroup/nccfsas/tree/main/Tools/SharpZeroLogon
-https://github.com/danigargu/CVE-2020-0796
 https://github.com/NetSPI/PowerUpSQL
 https://github.com/cube0x0/CVE-2021-1675
 https://github.com/KaLendsi/CVE-2021-1732-Exploit
@@ -78,6 +78,7 @@ https://github.com/cbeuw/Cloak/releases
 https://www.shellterproject.com/
 https://www.codeproject.com/Articles/1210398/TinyObfuscate-A-small-String-Obfuscator
 https://github.com/threatexpress/cs2modrewrite
+https://llvm.org/
 
 Credential Access
 https://github.com/outflanknl/Net-GPPPassword
@@ -90,10 +91,9 @@ https://github.com/lanjelot/patator
 https://github.com/hashcat/maskprocessor
 https://github.com/Arvanaghi/SessionGopher
 https://www.openwall.com/john/
-https://github.com/GhostPack/KeeThief/blob/master/PowerShell/KeeThief.ps1
+https://github.com/GhostPack/KeeThief
 https://github.com/zcgonvh/NTDSDumpEx
 https://github.com/matterpreter/OffensiveCSharp/tree/master/SessionSearcher
-https://github.com/lanjelot/patator
 https://github.com/S3cur3Th1sSh1t/WinPwn
 https://github.com/GhostPack/SharpDPAPI
 https://github.com/dafthack/MailSniper
@@ -103,6 +103,11 @@ https://gist.github.com/HarmJ0y/dc379107cfb4aa7ef5c3ecbac0133a02
 https://github.com/Dionach/NtdsAudit
 https://github.com/clymb3r/PowerShell/tree/master/Invoke-Mimikatz
 https://github.com/maaaaz/impacket-examples-windows
+https://github.com/EmpireProject/Empire
+https://github.com/outflanknl/Dumpert
+https://github.com/GhostPack/SharpRoast
+https://github.com/bats3c/ADCSPwn
+https://crackstation.net/
 
 Discovery
 https://github.com/HunnicCyber/SharpSniper
@@ -163,6 +168,7 @@ https://github.com/tnpitsecurity/ligolo-ng
 https://github.com/gloxec/CrossC2
 https://github.com/Und3rf10w/external_c2_framework
 https://github.com/socketio/socket.io-client
+https://proxy-spider.com/
 
 Exfiltration
 https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-TokenManipulation.ps1
@@ -170,8 +176,7 @@ https://github.com/rapid7/ruby_smb
 https://ngrok.com/
 https://github.com/JoelGMSec/Invoke-DNSteal
 https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration
-MEGAclient.exe
-StealBit
+https://mega.nz/
 
 Impact
 https://www.gpg4win.org/
